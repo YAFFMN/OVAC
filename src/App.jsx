@@ -3,6 +3,7 @@ import './App.css'
 import React from 'react'
 import Index from './Pages/index.jsx'
 import Gallery from './Pages/gallery.jsx'
+import About from './Pages/About.jsx'
 import NavBar from './Components/NavBar.jsx'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         {/* Example route */}
         <Route path="/" element={<Index />} />
+        <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         {/* Add more routes here */}
       </Routes>

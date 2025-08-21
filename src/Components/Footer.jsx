@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="mb-6">
           <img src={Logo} alt="OVAC Logo" className="mx-auto mb-2 w-24" />
           <h3 className="text-2xl font-bold text-[#ec1a63]">OVAC</h3>
-          <p className="text-gray-400 mt-2">Oman Visual Arts Club</p>
+          <p className="text-gray-400 mt-2">OVAC Visual Arts Club</p>
         </div>
         <div className="flex justify-center space-x-6 mb-6">
           <a href="#" className="text-gray-400 hover:text-[#ec1a63] transition-colors duration-300" aria-label="Instagram">
@@ -19,6 +19,16 @@ const Footer = () => {
           </a>
           <a href="#" className="text-gray-400 hover:text-[#ec1a63] transition-colors duration-300" aria-label="Facebook">
             <FaFacebookF size={24} />
+          </a>
+        </div>
+        {/* adress and mail */}
+        <div className="mb-6 text-gray-400">
+          <p className="mb-2"> STEM High for Boys - 6th of October,
+            Hadayek October, Near Zewail City,
+            behind Cosmic Village, 6th October,
+            Giza Governorate, Egypt</p>
+          <a href="mailto:visualartsclubstem@gmail.com" className="hover:text-[#ec1a63] transition-colors duration-300">
+              visualartsclubstem@gmail.com
           </a>
         </div>
         <div className="text-gray-500">

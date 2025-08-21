@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Card from "./ui/Card";
 
 const VisionSection = () => {
-  // This code for animation using the library 
+  // This code for animation using the library
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -22,7 +22,10 @@ const VisionSection = () => {
 
   return (
     // The head word
-    <div ref={containerRef} className="flex flex-col items-center justify-center min-h-[60vh] h-screen px-4 py-8 text-center overflow-x-hidden">
+    <div
+      ref={containerRef}
+      className="flex flex-col items-center justify-center min-h-screen px-4 py-16 text-center overflow-x-hidden"
+    >
       <motion.h2
         className="text-[#ec1a63] text-4xl font-extrabold mb-4 tracking-wide drop-shadow"
         style={{ opacity: titleOpacity, y: titleY }}
@@ -35,15 +38,21 @@ const VisionSection = () => {
         style={{ scaleX: lineScaleX, transformOrigin: "left" }}
       ></motion.div>
       {/* the two cards with props  */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20">
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
         <Card
           title={"Our Mission"}
-          description={"The club aims to introduce a new generation of digital artists who possess the innovation and passion needed to excel in their art field, allowing them to make significant contributions to their community."}
-          style={leftCardStyle} />
+          description={
+            "The club aims to introduce a new generation of digital artists who possess the innovation and passion needed to excel in their art field, allowing them to make significant contributions to their community."
+          }
+          style={leftCardStyle}
+        />
         <Card
           title={"Our Approach"}
-          description={"The club strives to fulfill its mission by offering unpaid membership to any individual interested in digital arts. Through this membership, members are offered tutorial lectures and assignments in graphic design, video production, and 3D design."}
-          style={rightCardStyle} />
+          description={
+            "The club strives to fulfill its mission by offering unpaid membership to any individual interested in digital arts. Through this membership, members are offered tutorial lectures and assignments in graphic design, video production, and 3D design."
+          }
+          style={rightCardStyle}
+        />
       </div>
     </div>
   );

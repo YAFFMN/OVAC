@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-[40vh] h-screen px-4 py-8 text-center">
       <img
-        className="w-40 sm:w-56 md:w-72 lg:w-80 xl:w-96 h-auto mb-6"
+        className="w-48 sm:w-62 md:w-78 lg:w-86 xl:w-100 h-auto mb-6"
         src="src/assets/logo-OVAC-1.png"
         alt="Hero"
       />

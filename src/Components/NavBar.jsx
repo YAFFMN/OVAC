@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png"
+import Logo from "../assets/logo.png";
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -25,10 +25,15 @@ function NavBar() {
       <nav className="fixed top-3 left-0 w-full bg-transparent shadow-md z-50">
         <div className="flex items-center justify-around px-6 py-3 relative">
           <div className="flex gap-2 items-center">
-          <img src={Logo} alt="OVAC Logo" className="w-12 h-12" />
-          <span className="text-2xl font-bold text-[#ec1a63]">
-            October Visual Arts Club
-          </span>
+            <img
+              src={Logo}
+              alt="OVAC Logo"
+              className="h-10 w-10 md:h-12 md:w-12"
+            />
+            <div className="text-lg font-bold text-[#ec1a63] md:text-xl lg:text-2xl">
+              <span className="hidden sm:inline">October Visual Arts Club</span>
+              <span className="inline sm:hidden">OVAC</span>
+            </div>
           </div>
           {/* Desktop links */}
           <div className="hidden md:flex space-x-6">

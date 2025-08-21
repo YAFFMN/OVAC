@@ -104,7 +104,7 @@ const VisualartsSection = () => {
         className="w-24 h-1 bg-[#ec1a63] rounded mb-8"
       ></motion.div>
       {/* the six cards for the app that will be used*/}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20">
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
         <Card
           title={"Adobe Photoshop"}
           icon={<TbBrandAdobePhotoshop />}

@@ -1,5 +1,5 @@
 import React from "react";
-import MainLogo from "./assets/logo-OVAC-1.png";
+import MainLogo from "../assets/logo-OVAC-1.png";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-[40vh] h-screen px-4 py-8 text-center">

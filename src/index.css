@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+
+:root{
+  --main-color: #ec1a63;
+  --main-color-2:#eeeb76;
+  --main-color-3:#2caa7c;
+}
+
 ::-webkit-scrollbar {
   width: .75vw;
 }
@@ -17,3 +24,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #dd034f;
 }
+
+
+

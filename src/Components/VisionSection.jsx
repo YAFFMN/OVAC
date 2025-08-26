@@ -44,6 +44,7 @@ const VisionSection = () => {
           description={
             "The club aims to introduce a new generation of digital artists who possess the innovation and passion needed to excel in their art field, allowing them to make significant contributions to their community."
           }
+          borderColor="var(--main-color)"
           style={leftCardStyle}
         />
         <Card
@@ -51,6 +52,7 @@ const VisionSection = () => {
           description={
             "The club strives to fulfill its mission by offering unpaid membership to any individual interested in digital arts. Through this membership, members are offered tutorial lectures and assignments in graphic design, video production, and 3D design."
           }
+          borderColor="var(--main-color-2)"
           style={rightCardStyle}
         />
       </div>

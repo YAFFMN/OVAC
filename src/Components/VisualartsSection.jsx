@@ -6,6 +6,7 @@ import { TbBrandAdobeIllustrator } from "react-icons/tb";
 import { BiLogoBlender } from "react-icons/bi";
 import { TbBrandAdobePremier } from "react-icons/tb";
 import { SiAdobeaftereffects } from "react-icons/si";
+import { MdAnimation } from "react-icons/md";
 // premiere blender illustrator photoshop AfterEffect AdobeAnimate
 const VisualartsSection = () => {
   const containerRef = useRef(null);
@@ -111,6 +112,7 @@ const VisualartsSection = () => {
           description={
             "Create stunning graphics and edit photos with the industry-standard software."
           }
+          borderColor="var(--main-color-2)"
           style={leftCardStyle1}
         />
         <Card
@@ -119,14 +121,16 @@ const VisualartsSection = () => {
           description={
             "Design vector graphics and illustrations with precision and ease."
           }
+          borderColor="var(--main-color-2)"
           style={rightCardStyle1}
         />
         <Card
           title={"Blender"}
           icon={<BiLogoBlender />}
           description={
-            "Bring your 3D creations to life with this powerful open-source software."
+            "Bring your 3D creations to life with this powerful and completely free, open-source software."
           }
+          borderColor="var(--main-color)"
           style={leftCardStyle2}
         />
         <Card
@@ -135,6 +139,7 @@ const VisualartsSection = () => {
           description={
             "Add motion graphics and visual effects to your videos with ease."
           }
+          borderColor="var(--main-color)"
           style={rightCardStyle2}
         />
         <Card
@@ -143,13 +148,16 @@ const VisualartsSection = () => {
           description={
             "Edit and produce professional videos with powerful, industry-leading tools."
           }
+          borderColor="var(--main-color-3)"
           style={leftCardStyle3}
         />
         <Card
           title={"Adobe Animate"}
+          icon={<MdAnimation />}
           description={
             "Create interactive animations for games, TV shows, and the web."
           }
+          borderColor="var(--main-color-3)"
           style={rightCardStyle3}
         />
       </div>

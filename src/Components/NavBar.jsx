@@ -30,7 +30,7 @@ function NavBar() {
               alt="OVAC Logo"
               className="h-10 w-10 md:h-12 md:w-12"
             />
-            <div className="text-lg font-bold text-[#ec1a63] md:text-xl lg:text-2xl">
+            <div className="text-lg font-bold text-gray-100 md:text-xl lg:text-2xl">
               <span className="hidden sm:inline">October Visual Arts Club</span>
               <span className="inline sm:hidden">OVAC</span>
             </div>
@@ -39,19 +39,19 @@ function NavBar() {
           <div className="hidden md:flex space-x-6">
             <Link
               to="/"
-              className="text-white text-lg font-medium hover:text-[#ec1a63] transition duration-300 ease-in-out"
+              className="text-gray-100 text-lg font-medium hover:text-[var(--main-color)] transition duration-300 ease-in-out"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white text-lg font-medium hover:text-[#ec1a63] transition duration-300 ease-in-out"
+              className="text-gray-100 text-lg font-medium hover:text-[var(--main-color-2)] transition duration-300 ease-in-out"
             >
               About us
             </Link>
             <Link
               to="/gallery"
-              className="text-white text-lg font-medium hover:text-[#ec1a63] transition duration-300 ease-in-out"
+              className="text-gray-100 text-lg font-medium hover:text-[var(--main-color-3)] transition duration-300 ease-in-out"
             >
               Gallery
             </Link>

@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const HeadWord = ({ HeadWord }) => {
+const HeadWord = ({ HeadWord, color = "#ec1a63" }) => {
   return (
-    <h2 className='text-[#ec1a63] text-4xl font-extrabold mb-4 tracking-wide drop-shadow'
-    >{HeadWord}</h2>
-  )
-}
+    <h2
+      className="text-4xl font-extrabold mb-4 tracking-wide drop-shadow"
+      style={{ color }}
+    >
+      {HeadWord}
+    </h2>
+  );
+};
 
-export default HeadWord
+export default HeadWord;

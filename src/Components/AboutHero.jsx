@@ -5,8 +5,9 @@ import Card from "./ui/Card";
 const AboutHero = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 text-center">
-      <HeadWord HeadWord="About Us" />
-      <Underline />
+      <HeadWord HeadWord="About Us"
+                color="var(--main-color-2)"  />
+      <Underline color="var(--main-color-2)" />
       <div className="w-full max-w-4xl mt-8">
         <Card
           description={

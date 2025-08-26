@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Underline = () => {
+const Underline = ({ color = "#ec1a63" }) => {
   return (
-    <div className='w-24 h-1 bg-[#ec1a63] rounded mb-8'>
+    <div className='w-24 h-1 rounded mb-8' style={{ backgroundColor: color }}>
     </div>
   )
 }

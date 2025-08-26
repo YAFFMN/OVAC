@@ -67,43 +67,29 @@ const WhoweAre = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-32 text-center overflow-x-hidden">
-      <HeadWord HeadWord="Who We Are" />
-      <Underline />
+      <HeadWord HeadWord="Who We Are" color="var(--main-color-2)" />
+      <Underline color="var(--main-color-2)" />
       <motion.div
         className="grid w-full max-w-6xl grid-cols-1 items-center gap-16 mx-auto mt-12 md:grid-cols-2 md:gap-8 lg:gap-20"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.3 }}
       >
         <motion.div variants={fromLeftVariant}>
           <Card
+            borderColor="var(--main-color-2)"
             description={
               <div className="text-left">
-              <p className="mb-4">
-                October Visual Arts Club (OVAC) is a student organization
-                affiliated with STEM High School for Boys - 6th of October. We
-                grow the artistic talent by providing student-to-student Visual
-                Arts courses.
-              </p>
-              <p className="mb-4">
-                We are a group of high school students brought together by our
-                shared passion for art in its visual or digital form. Due to
-                being equipped with the necessary skills besides the inspiring
-                passion, in 2024, we founded this club for the purpose of
-                promoting the artistic community not only in our school but in
-                our whole country, Egypt.
-              </p>
-              <p>
-                October Visual Arts Club is a community devoted to providing a
-                welcoming environment for those who hold an interest in various
-                forms of visual expression, including graphic design, video
-                production, and 3D design. The club is committed to nurturing
-                the growth of its members as artists by hosting regular
-                lectures, in addition to monitoring this growth through weekly
-                assignments.
-              </p>
-            </div>
+                <p className="mb-4">
+                  We are a group of high school students brought together by our
+                  shared passion for art in its visual or digital form. Due to
+                  being equipped with the necessary skills besides the inspiring
+                  passion, in 2024, we founded this club for the purpose of
+                  promoting the artistic community not only in our school but in
+                  our whole country, Egypt.
+                </p>
+              </div>
             }
           />
         </motion.div>
@@ -140,6 +126,36 @@ const WhoweAre = () => {
             );
           })}
         </motion.div>
+      </motion.div>
+      <motion.img
+        src="https://placehold.co/600x300/2caa7c/ffffff"
+        alt="Team working on projects"
+        className="mt-16 w-full max-w-lg max-h-[300px] rounded-lg border-4 border-[var(--main-color)] shadow-xl"
+        variants={fromRightVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      />
+      <motion.div
+        className="mt-16 w-full max-w-6xl"
+        variants={fromLeftVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <Card
+          borderColor="var(--main-color-3)"
+          description={
+            <p className="text-left">
+              Our community is devoted to providing a welcoming environment for
+              those who hold an interest in various forms of visual expression,
+              including graphic design, video production, 3D design, and
+              animation. The club is committed to nurturing the growth of its
+              members as artists by hosting regular lectures, in addition to
+              monitoring this growth through weekly assignments.
+            </p>
+          }
+        />
       </motion.div>
     </div>
   );

@@ -2,70 +2,41 @@ import React, { useState } from "react";
 import HeadWord from "./ui/HeadWord";
 import Underline from "./ui/Underline";
 import { motion } from "framer-motion";
-// import image1 from "../assets/FCK.jpg"
-// Placeholder data for workers
-const workers = [
-  {
-    name: "John Doe",
-    role: "President",
-    imageUrl: "https://placehold.co/400x400/53be97/white?text=JD",
-    year: 2024,
-  },
-  {
-    name: "Jane Smith",
-    role: "Vice President",
-    imageUrl: "https://placehold.co/400x400/53be97/white?text=JS",
-    year: 2024,
-  },
-  {
-    name: "Peter Jones",
-    role: "Lead Designer",
-    imageUrl: "https://placehold.co/400x400/eeeb76/black?text=PJ",
-    year: 2024,
-  },
-  {
-    name: "Sarah Miller",
-    role: "Developer",
-    imageUrl: "https://placehold.co/400x400/ec1a63/white?text=SM",
-    year: 2024,
-  },
-  {
-    name: "Mike Brown",
-    role: "Marketing Head",
-    imageUrl: "https://placehold.co/400x400/53be97/white?text=MB",
-    year: 2024,
-  },
-  {
-    name: "Emily White",
-    role: "Content Creator",
-    imageUrl: "https://placehold.co/400x400/eeeb76/black?text=EW",
-    year: 2024,
-  },
-  {
-    name: "Chris Green",
-    role: "UX Researcher",
-    imageUrl: "https://placehold.co/400x400/ec1a63/white?text=CG",
-    year: 2023,
-  },
-  {
-    name: "Alice Johnson",
-    role: "Data Analyst",
-    imageUrl: "https://placehold.co/400x400/53be97/white?text=AJ",
-    year: 2023,
-  },
-  {
-    name: "David Brown",
-    role: "Project Manager",
-    imageUrl: "https://placehold.co/400x400/53be97/white?text=DB",
-    year: 2023,
-  },
-  {
-    name: "Emma Wilson",
-    role: "Quality Assurance",
-    imageUrl: "https://placehold.co/400x400/ec1a63/white?text=EW",
-    year: 2023,
-  },
-];
+import DB from '../assets/images/Db.json'
+
+// Get workers data from JSON and add roles (since JSON doesn't have roles)
+const workersFromJSON = DB.images.worker.map(worker => ({
+  name: worker.name,
+  role: "Team Member", // Default role since JSON doesn't specify roles
+  imageUrl: worker.src,
+  year: worker.year,
+  alt: worker.alt
+}));
+
+// You can also create a role mapping if you want specific roles for each person
+const roleMapping = {
+  "abdelrahman": "President",
+  "ali": "Vice President", 
+  "ebram": "Lead Designer",
+  "ibrahim": "Developer",
+  "kareem": "Marketing Head",
+  "mazen": "Content Creator",
+  "omar": "UX Researcher",
+  "omar_sabry": "Data Analyst",
+  "amro": "Project Manager",
+  "youssef": "Quality Assurance",
+  "ziad": "Backend Developer",
+  "shahd": "Frontend Developer",
+  "seif": "UI/UX Designer",
+  "nada": "Content Writer",
+  "malak": "Social Media Manager"
+};
+
+// Apply specific roles if available, otherwise use default
+const workers = workersFromJSON.map(worker => ({
+  ...worker,
+  role: roleMapping[worker.name.toLowerCase()] || "Team Member"
+}));
 
 const containerVariants = {
   hidden: { opacity: 1 },
@@ -97,7 +68,7 @@ const cardVariants = {
   },
 };
 
-const WorkerCard = ({ name, role, imageUrl, className = "" }) => {
+const WorkerCard = ({ name, role, imageUrl, alt, className = "" }) => {
   return (
     <motion.div
       variants={cardVariants}
@@ -105,12 +76,16 @@ const WorkerCard = ({ name, role, imageUrl, className = "" }) => {
     >
       <img
         src={imageUrl}
-        alt={`Photo of ${name}`}
+        alt={alt || `Photo of ${name}`}
         className="object-cover w-36 h-36 mb-6 rounded-full border-4 border-[#ec1a63] shadow-lg"
+        onError={(e) => {
+          // Fallback image if the image fails to load
+          e.target.src = `https://placehold.co/400x400/53be97/white?text=${name.charAt(0).toUpperCase()}`;
+        }}
       />
       
       <div className="space-y-2">
-        <h3 className="text-xl font-bold text-white">
+        <h3 className="text-xl font-bold text-white capitalize">
           {name}
         </h3>
         <p className="text-gray-300 font-medium text-sm tracking-wide">
@@ -122,6 +97,7 @@ const WorkerCard = ({ name, role, imageUrl, className = "" }) => {
 };
 
 const Workers = () => {
+  // Get all unique years from JSON data
   const allYears = [...new Set(workers.map((w) => w.year))].sort(
     (a, b) => b - a
   );
@@ -135,6 +111,8 @@ const Workers = () => {
     <div className="flex flex-col items-center justify-center px-4 py-16 text-center bg-black overflow-x-hidden">
       <HeadWord HeadWord="Meet Our Team" color="var(--main-color-2)" />
       <Underline color="var(--main-color-2)" />
+      
+      {/* Year Filter Buttons */}
       <div className="flex justify-center gap-4 my-8">
         {allYears.map((year) => (
           <button
@@ -150,13 +128,15 @@ const Workers = () => {
           </button>
         ))}
       </div>
+
+      {/* Team Members Grid */}
       <motion.div
         className="grid w-full max-w-screen-xl grid-cols-1 gap-8 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
-        key={selectedYear} // Add this key to force re-render when year changes
+        key={selectedYear} // Force re-render when year changes
       >
         {filteredWorkers.map((worker, index) => {
           // Center remaining cards when there are fewer than 5 in the last row
@@ -179,13 +159,23 @@ const Workers = () => {
 
           return (
             <WorkerCard 
-              key={`${worker.name}-${selectedYear}`} // IMPROVED: Better key for re-renders
-              {...worker} 
+              key={`${worker.name}-${selectedYear}`}
+              name={worker.name}
+              role={worker.role}
+              imageUrl={worker.imageUrl}
+              alt={worker.alt}
               className={centeringClass} 
             />
           );
         })}
       </motion.div>
+
+      {/* Show message if no workers found for selected year */}
+      {filteredWorkers.length === 0 && (
+        <div className="text-center text-gray-400 py-8">
+          No team members found for {selectedYear}
+        </div>
+      )}
     </div>
   );
 };

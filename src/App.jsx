@@ -5,8 +5,9 @@ import Index from './Pages/index.jsx'
 import Gallery from './Pages/gallery.jsx'
 import About from './Pages/About.jsx'
 import NavBar from './Components/NavBar.jsx'
-
+import DB from './assets/images/Db.json'
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>

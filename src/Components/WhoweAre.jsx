@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 import HeadWord from "./ui/HeadWord";
 import Underline from "./ui/Underline";
 import Card from "./ui/Card";
+import DB from "../assets/images/Db.json";
 
-const images = [
-  {
-    src: "https://placehold.co/400x400/ec1a63/ffffff",
-    alt: "Team collaboration",
-  },
-  {
-    src: "https://placehold.co/400x400/53be97/ffffff",
-    alt: "Creative process",
-  },
-  {
-    src: "https://placehold.co/400x400/eeeb76/000000",
-    alt: "Digital art creation",
-  },
-];
+function getImageUrl(path) {
+  const imageName = path.replace("./", "");
+  return new URL(`../assets/images/${imageName}`, import.meta.url).href;
+}
+
+const images = DB.images.whoWeAre.map((imageData) => ({
+  src: getImageUrl(imageData.src),
+  alt: imageData.alt,
+}));
+
+// Use the first image from the "whoWeAre" section for the single team image
+const SchoolImageSrc = getImageUrl(DB.images.whoWeAre[0].src);
+const SchoolImageAlt = DB.images.whoWeAre[0].alt;
 
 const WhoweAre = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -128,9 +128,9 @@ const WhoweAre = () => {
         </motion.div>
       </motion.div>
       <motion.img
-        src="https://placehold.co/600x300/2caa7c/ffffff"
-        alt="Team working on projects"
-        className="mt-16 w-full max-w-lg max-h-[300px] rounded-lg border-4 border-[var(--main-color)] shadow-xl"
+        src={SchoolImageSrc}
+        alt={SchoolImageAlt}
+        className="mt-16 w-full max-w-2xl rounded-4xl border-4 border-[var(--main-color)] shadow-xl"
         variants={fromRightVariant}
         initial="hidden"
         whileInView="visible"

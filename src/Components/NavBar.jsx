@@ -55,6 +55,12 @@ function NavBar() {
             >
               Gallery
             </Link>
+            <Link
+              to="/Bootcamp"
+              className="text-gray-100 text-lg font-medium hover:text-[var(--main-color-3)] transition duration-300 ease-in-out"
+            >
+              Bootcamp
+            </Link>
           </div>
           {/* Hamburger button */}
           <button

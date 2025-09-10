@@ -21,6 +21,7 @@ function NavBar() {
   }, [menuOpen]);
 
   return (
+    
     <>
       <nav className="fixed top-3 left-0 w-full bg-transparent shadow-md z-50">
         <div className="flex items-center justify-around px-6 py-3 relative">

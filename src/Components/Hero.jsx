@@ -1,5 +1,7 @@
 import React from "react";
 import MainLogo from "../assets/logo-OVAC-1.png";
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-start h-screen px-4 pt-28 text-center">
@@ -18,14 +20,14 @@ const Hero = () => {
       </p>
       {/* buttons  */}
       <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row">
-        <a
-          href="#"
+        <Link
+          to="/admission"
           className="transform rounded-full bg-[#2caa7c] px-8 py-4 font-bold text-white shadow-lg shadow-[#2caa7c]/30 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#32c288] hover:shadow-xl hover:shadow-[#2caa7c]/50"
         >
           Register For the bootcamp
-        </a>
+        </Link>
         <a
-            href="/gallery"
+          href="/gallery"
           className="transform rounded-full border-2 border-[#2caa7c] bg-transparent px-8 py-4 font-bold text-[#2caa7c] transition-all duration-300 ease-in-out hover:scale-105 hover:border-[#ec1a63] hover:bg-[#ec1a63] hover:text-white hover:shadow-lg hover:shadow-[#ec1a63]/40"
         >
           See our Art

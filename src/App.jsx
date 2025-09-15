@@ -5,6 +5,7 @@ import Index from './Pages/index.jsx'
 import Gallery from './Pages/gallery.jsx'
 import About from './Pages/About.jsx'
 import Bootcamp from './Pages/Bootcamp.jsx'
+import Admission from './Pages/Admission.jsx'
 import NavBar from './Components/NavBar.jsx'
 import DB from './assets/images/Db.json'
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/bootcamp" element={<Bootcamp />} />
+        <Route path="/admission"element={<Admission />}/>
         {/* Add more routes here */}
       </Routes>
     </BrowserRouter>

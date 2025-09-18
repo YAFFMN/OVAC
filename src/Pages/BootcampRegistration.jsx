@@ -288,7 +288,7 @@ const RegistrationForm = () => {
             <div>
               <label className="text-white font-medium mb-2 block">Gender *</label>
               <div className="flex gap-4">
-                {['Male', 'Female', 'Prefer not to say'].map((gender) => (
+                {['Male', 'Female'].map((gender) => (
                   <label key={gender} className="flex items-center gap-2 text-white cursor-pointer">
                     <input
                       type="radio"
@@ -458,4 +458,5 @@ const RegistrationForm = () => {
   );
 };
 export default RegistrationForm;
+
 

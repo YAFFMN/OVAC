@@ -73,12 +73,35 @@ const RegistrationForm = () => {
   };
 
   const submitToSupabase = async (data) => {
-    const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
-    const supabaseKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
+    // Temporary: Add your actual values here for testing
+    const supabaseUrl = process.env.REACT_APP_SUPABASE_URL || "https://xswlenbxkybjpaafvion.supabase.co";
+    const supabaseKey = process.env.REACT_APP_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhzd2xlbmJ4a3lianBhYWZ2aW9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgxNTE4NDEsImV4cCI6MjA3MzcyNzg0MX0.fP3vtVcZpNNCYKK-rhZQFh0SbHYYPV0bCtsF0v7wGPc";
+    
+    console.log('Testing connection...');
+    console.log('URL exists:', !!supabaseUrl);
+    console.log('Key exists:', !!supabaseKey);
+    console.log('URL value:', supabaseUrl);
     
     if (!supabaseUrl || !supabaseKey) {
       throw new Error('Supabase configuration missing');
     }
+
+    // First test the connection
+    const testResponse = await fetch(`${supabaseUrl}/rest/v1/bootcamp_registrations?select=count`, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${supabaseKey}`,
+        'apikey': supabaseKey,
+      }
+    });
+
+    if (!testResponse.ok) {
+      const errorText = await testResponse.text();
+      console.error('Connection test failed:', errorText);
+      throw new Error(`Connection failed: ${testResponse.status} ${testResponse.statusText}`);
+    }
+
+    console.log('Connection test successful!');
 
     const response = await fetch(`${supabaseUrl}/rest/v1/bootcamp_registrations`, {
       method: 'POST',
@@ -92,7 +115,9 @@ const RegistrationForm = () => {
     });
 
     if (!response.ok) {
-      throw new Error('Failed to submit registration');
+      const errorText = await response.text();
+      console.error('Insert failed:', errorText);
+      throw new Error(`Insert failed: ${response.status} ${response.statusText} - ${errorText}`);
     }
 
     return response;
@@ -141,6 +166,10 @@ const RegistrationForm = () => {
     } catch (error) {
       console.error('Submission error:', error);
       setSubmitStatus('error');
+      // Show detailed error in console for debugging
+      console.log('Supabase URL:', process.env.REACT_APP_SUPABASE_URL);
+      console.log('Supabase Key exists:', !!process.env.REACT_APP_SUPABASE_ANON_KEY);
+      alert(`Debug info: ${error.message}`);
     } finally {
       setIsSubmitting(false);
     }
@@ -428,5 +457,5 @@ const RegistrationForm = () => {
     </div>
   );
 };
-
 export default RegistrationForm;
+

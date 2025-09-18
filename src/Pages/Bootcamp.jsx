@@ -21,4 +21,4 @@ const Bootcamp = () => {
   )
 }
 
-export default Bootcamp;
+export default Bootcamp

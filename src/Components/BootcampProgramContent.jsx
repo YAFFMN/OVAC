@@ -1,202 +1,110 @@
-import React from 'react'
+import React from "react";
+import HeadWord from "./ui/HeadWord";
+import Underline from "./ui/Underline";
+import Card from "./ui/ProgramContentCard";
+
+const programData = [
+  {
+    title: "Photo Manipulation",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      " In-depth exploration of Adobe Photoshop tools to create manipulated photographs.Participants will work different Photoshop tasks under the guidance of their mentors",
+    align: "left",
+    borderColor: "var(--main-color)",
+  },
+  {
+    title: "Adobe Photoshop Basics",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Get hands-on experience with Photoshop's essential tools for photo editing, manipulation, and digital painting.",
+    align: "right",
+    borderColor: "var(--main-color-2)",
+  },
+  {
+    title: "Vector Art with Adobe Illustrator",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Master the pen tool and create scalable vector graphics, logos, and illustrations in Illustrator.",
+    align: "left",
+    borderColor: "var(--main-color-3)",
+  },
+  {
+    title: "Advanced Photoshop Techniques",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Dive deeper into Photoshop with advanced selection, masking, and compositing techniques.",
+    align: "right",
+    borderColor: "var(--main-color)",
+  },
+  {
+    title: "Typography and Layout",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Explore the art of typography and create compelling layouts for web and print.",
+    align: "left",
+    borderColor: "var(--main-color-2)",
+  },
+  {
+    title: "Intro to UI/UX Design",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Understand the principles of User Interface and User Experience design to create user-friendly digital products.",
+    align: "right",
+    borderColor: "var(--main-color-3)",
+  },
+  {
+    title: "Branding and Identity",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Learn how to create a strong brand identity, from logo design to a complete brand style guide.",
+    align: "left",
+    borderColor: "var(--main-color)",
+  },
+  {
+    title: "Final Project & Portfolio Building",
+    sessions: "2 Sessions",
+    workshops: "1 Workshop",
+    description:
+      "Apply your skills to a comprehensive final project and learn how to build a professional portfolio to showcase your work.",
+    align: "right",
+    borderColor: "var(--main-color-2)",
+  },
+];
 
 const BootcampProgramContent = () => {
   return (
-    <div className="py-20 px-4 relative z-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <h3 className="text-4xl font-bold text-cyan-400 text-center mb-4">Program Content</h3>
-        <div className="w-48 h-1 bg-cyan-400 mx-auto mb-12"></div>
-        
-        <p className="text-white text-lg text-center mb-20 max-w-4xl mx-auto leading-relaxed">
-          The program consists of 6 specialized training sessions + two practical workshops. Students will hand practical tasks after each session to ensure comprehension. At the end, students will work on their final projects.
-        </p>
-
-        {/* Connecting Lines Background */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Horizontal lines */}
-          <div className="absolute top-1/3 left-0 w-full h-0.5 bg-yellow-400 opacity-60"></div>
-          <div className="absolute bottom-1/3 left-0 w-full h-0.5 bg-yellow-400 opacity-60"></div>
-          
-          {/* Vertical lines */}
-          <div className="absolute top-0 left-1/4 w-0.5 h-full bg-yellow-400 opacity-60"></div>
-          <div className="absolute top-0 right-1/4 w-0.5 h-full bg-yellow-400 opacity-60"></div>
-          
-          {/* Diagonal connecting curves */}
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 800" fill="none">
-            <path d="M200 200 Q400 150 600 200" stroke="#facc15" strokeWidth="2" opacity="0.6" fill="none"/>
-            <path d="M600 200 Q750 250 800 400" stroke="#facc15" strokeWidth="2" opacity="0.6" fill="none"/>
-            <path d="M800 400 Q750 550 600 600" stroke="#facc15" strokeWidth="2" opacity="0.6" fill="none"/>
-            <path d="M600 600 Q400 650 200 600" stroke="#facc15" strokeWidth="2" opacity="0.6" fill="none"/>
-            <path d="M200 600 Q150 450 200 200" stroke="#facc15" strokeWidth="2" opacity="0.6" fill="none"/>
-          </svg>
-          
-          {/* Connection dots */}
-          <div className="absolute top-1/4 left-1/6 w-4 h-4 bg-yellow-400 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/5 w-3 h-3 bg-yellow-400 rounded-full border-2 border-transparent outline outline-2 outline-yellow-400"></div>
-          <div className="absolute bottom-1/4 right-1/6 w-4 h-4 bg-yellow-400 rounded-full"></div>
-          <div className="absolute bottom-1/3 left-1/5 w-3 h-3 bg-yellow-400 rounded-full border-2 border-transparent outline outline-2 outline-yellow-400"></div>
-          <div className="absolute top-1/2 left-1/12 w-3 h-3 bg-yellow-400 rounded-full border-2 border-transparent outline outline-2 outline-yellow-400"></div>
-          <div className="absolute top-1/2 right-1/12 w-3 h-3 bg-yellow-400 rounded-full border-2 border-transparent outline outline-2 outline-yellow-400"></div>
-        </div>
-
-        {/* Program Cards Grid */}
-        <div className="relative z-10 space-y-16">
-          
-          {/* Row 1: Photo Manipulation (Left) */}
-          <div className="flex justify-start">
-            <div className="w-96 bg-gradient-to-br from-pink-600 to-pink-800 rounded-3xl p-8 shadow-2xl border-4 border-pink-400 relative">
-              {/* Photoshop Icon */}
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                <span className="text-white font-bold text-2xl">Ps</span>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">Photo Manipulation</h4>
-              
-              <div className="flex justify-center gap-3 mb-6">
-                <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold">2 Sessions</span>
-                <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-bold">1 Workshop</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                In-depth exploration of Adobe Photoshop tools to create manipulated photographs. 
-                Participants will work different Photoshop tasks under the guidance of their mentors.
-              </p>
+    <div className="bg-black p-4">
+      <div className="flex flex-col justify-center items-center text-center mg-3 p-5">
+        <HeadWord HeadWord="Bootcamp Program" color="#ec1a63" />
+        <Underline color="#ec1a63" />
+      </div>
+      <div className="relative container mx-auto px-6 flex flex-col space-y-8">
+        <div className="absolute z-0 w-2 h-full bg-white/10 shadow-md inset-0 left-1/2 -translate-x-1/2"></div>
+        {programData.map((item, index) => (
+          <div key={index} className="relative flex items-center">
+            <div
+              className={`w-1/2 ${
+                item.align === "left" ? "pr-8" : "pl-8 ml-auto"
+              }`}
+            >
+              <Card {...item} />
             </div>
+            <div
+              className="absolute w-5 h-5 rounded-full bg-yellow-400 z-10 left-1/2 -translate-x-1/2 shadow-lg"
+              style={{ boxShadow: "0 0 12px 3px var(--main-color-3)" }}
+            ></div>
           </div>
-
-          {/* Row 2: 3D Design (Right) */}
-          <div className="flex justify-end">
-            <div className="w-96 bg-gradient-to-br from-yellow-600 to-yellow-800 rounded-3xl p-8 shadow-2xl border-4 border-yellow-400 relative">
-              {/* Blender Icon */}
-              <div className="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center mb-6 mx-auto relative">
-                <div className="w-8 h-8 bg-blue-500 rounded-full relative">
-                  <div className="absolute top-1 left-1 w-2 h-2 bg-orange-400 rounded-full"></div>
-                </div>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">3D Design</h4>
-              
-              <div className="flex justify-center mb-6">
-                <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-bold">1 Session</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                Basics of Blender interface and key tools for any project. 
-                Students will create 3D models with different materials and realistic elements.
-              </p>
-            </div>
-          </div>
-
-          {/* Row 3: Video Editing (Center) */}
-          <div className="flex justify-center">
-            <div className="w-96 bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-3xl p-8 shadow-2xl border-4 border-cyan-400 relative">
-              {/* Premiere Pro Icon */}
-              <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                <span className="text-white font-bold text-2xl">Pr</span>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">Video Editing</h4>
-              
-              <div className="flex justify-center mb-6">
-                <span className="bg-pink-400 text-white px-4 py-2 rounded-full text-sm font-bold">1 Session</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                In-depth exploration of editing and controlling videos with Adobe Premiere Pro. 
-                Students will use advanced video effects like key frames and animations.
-              </p>
-            </div>
-          </div>
-
-          {/* Row 4: Animation (Left) */}
-          <div className="flex justify-start">
-            <div className="w-96 bg-gradient-to-br from-pink-600 to-purple-800 rounded-3xl p-8 shadow-2xl border-4 border-pink-400 relative">
-              {/* After Effects Icon placeholder */}
-              <div className="w-16 h-16 bg-purple-700 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                <span className="text-white font-bold text-2xl">Ae</span>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">Animation</h4>
-              
-              <div className="flex justify-center gap-3 mb-6">
-                <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold">2 Sessions</span>
-                <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-bold">1 Workshop</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                Students will learn the basics of 2D animation with Adobe Animate and Adobe After Effects. 
-                They will animate simple characters and move different body parts with some aura and light effects.
-              </p>
-            </div>
-          </div>
-
-          {/* Empty Cards for you to fill */}
-          
-          {/* Row 5: Empty Card 1 (Right) */}
-          <div className="flex justify-end">
-            <div className="w-96 bg-gradient-to-br from-purple-600 to-indigo-800 rounded-3xl p-8 shadow-2xl border-4 border-purple-400 relative">
-              {/* Empty Icon placeholder */}
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                <span className="text-white font-bold text-2xl">?</span>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">[Card Title]</h4>
-              
-              <div className="flex justify-center mb-6">
-                <span className="bg-gray-400 text-black px-4 py-2 rounded-full text-sm font-bold">[Sessions]</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                [Add your content description here]
-              </p>
-            </div>
-          </div>
-
-          {/* Row 6: Empty Card 2 (Center) */}
-          <div className="flex justify-center">
-            <div className="w-96 bg-gradient-to-br from-green-600 to-emerald-800 rounded-3xl p-8 shadow-2xl border-4 border-green-400 relative">
-              {/* Empty Icon placeholder */}
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                <span className="text-white font-bold text-2xl">?</span>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">[Card Title]</h4>
-              
-              <div className="flex justify-center gap-3 mb-6">
-                <span className="bg-gray-400 text-black px-4 py-2 rounded-full text-sm font-bold">[Sessions]</span>
-                <span className="bg-gray-400 text-black px-4 py-2 rounded-full text-sm font-bold">[Workshops]</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                [Add your content description here]
-              </p>
-            </div>
-          </div>
-
-          {/* Row 7: Empty Card 3 (Left) */}
-          <div className="flex justify-start">
-            <div className="w-96 bg-gradient-to-br from-orange-600 to-red-800 rounded-3xl p-8 shadow-2xl border-4 border-orange-400 relative">
-              {/* Empty Icon placeholder */}
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                <span className="text-white font-bold text-2xl">?</span>
-              </div>
-              
-              <h4 className="text-2xl font-bold text-white text-center mb-4">[Card Title]</h4>
-              
-              <div className="flex justify-center mb-6">
-                <span className="bg-gray-400 text-black px-4 py-2 rounded-full text-sm font-bold">[Sessions]</span>
-              </div>
-              
-              <p className="text-white text-center leading-relaxed">
-                [Add your content description here]
-              </p>
-            </div>
-          </div>
-
-        </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BootcampProgramContent
+export default BootcampProgramContent;

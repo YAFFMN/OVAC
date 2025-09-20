@@ -141,6 +141,13 @@ function NavBar() {
             >
               Gallery
             </Link>
+            <Link
+              to="/Bootcamp"
+              className="w-full text-center text-[#ec1a63] text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white transition duration-200 shadow"
+              onClick={() => setMenuOpen(false)}
+            >
+              Gallery
+            </Link>
             <div className="mt-12 text-sm text-gray-400">© 2025 OVAC</div>
           </div>
         )}

@@ -6,7 +6,7 @@ import BootcampHero from '../Components/BootcampHero'
 import BootcampStats from '../Components/BootcampStats'
 import BootcampEligibility from '../Components/BootcampEligibility'
 import BootcampProgramContent from '../Components/BootcampProgramContent'
-
+import BootcampCTA from '../Components/BootcampCTA'
 const Bootcamp = () => {
   return (
     <div className='bg-black min-h-screen'>
@@ -16,9 +16,9 @@ const Bootcamp = () => {
       <BootcampStats />
       <BootcampEligibility />
       <BootcampProgramContent />
+      <BootcampCTA /> 
       <Footer />
     </div>
   )
 }
-
 export default Bootcamp

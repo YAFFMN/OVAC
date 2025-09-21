@@ -108,7 +108,7 @@ const AnimatedProgramContentCard = ({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {/* Animated background glow */}
+            {}
             <div 
                 className="absolute inset-0 opacity-0 transition-opacity duration-500 rounded-3xl"
                 style={{
@@ -117,7 +117,7 @@ const AnimatedProgramContentCard = ({
                 }}
             />
             
-            {/* Floating particles animation */}
+            {}
             {isHovered && (
                 <>
                     <div 
@@ -155,7 +155,7 @@ const AnimatedProgramContentCard = ({
             }`}>
                 <span className="text-white leading-tight relative">
                     {title}
-                    {/* Animated underline */}
+                    {}
                     <div 
                         className="absolute bottom-0 left-1/2 h-0.5 transition-all duration-500 transform -translate-x-1/2"
                         style={{
@@ -321,7 +321,7 @@ const AnimatedBootcampProgramContent = () => {
             </div>
             
             <div className="relative container mx-auto px-6 flex flex-col space-y-8" ref={timelineRef}>
-                {/* Animated central line */}
+                {}
                 <div 
                     className={`absolute z-0 w-2 h-full inset-0 left-1/2 -translate-x-1/2 overflow-hidden transition-all duration-1000 ease-out ${
                         visibleTimeline ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
@@ -332,7 +332,7 @@ const AnimatedBootcampProgramContent = () => {
                         transformOrigin: 'top center',
                     }}
                 >
-                    {/* Animated pulse running down the line */}
+                    {}
                     {visibleTimeline && (
                         <div 
                             className="absolute w-full h-20 bg-gradient-to-b from-transparent via-white to-transparent opacity-50"
@@ -353,7 +353,7 @@ const AnimatedBootcampProgramContent = () => {
                             <AnimatedProgramContentCard {...item} index={index} />
                         </div>
                         
-                        {/* Animated timeline dot */}
+                        {}
                         <TimelineDot index={index} />
                     </div>
                 ))}
@@ -409,3 +409,4 @@ const AnimatedBootcampProgramContent = () => {
 };
 
 export default AnimatedBootcampProgramContent;
+

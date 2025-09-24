@@ -34,13 +34,13 @@ const Hero = () => {
           onClick={bootcamp}
           className="transform rounded-full bg-[#ec1a63] px-8 py-4 font-bold text-white shadow-lg shadow-[#ec1a63]/30 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#ec1a63] hover:shadow-xl hover:shadow-[#ec1a63]/50"
         >
-          Register For the Bootcamp
+          Register for the Bootcamp
         </button>
         <button
           onClick={gallery}
           className="transform rounded-full border-2 border-[#2caa7c] bg-transparent px-8 py-4 font-bold text-[#2caa7c] transition-all duration-300 ease-in-out hover:scale-105 hover:border-[#2caa7c] hover:bg-[#2caa7c] hover:text-white hover:shadow-lg hover:shadow-[#2caa7c]/40"
         >
-          See our Art
+          See Our Art
         </button>
       </div>
     </div>

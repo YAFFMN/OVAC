@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
+// Timeline Dot Component with scroll-triggered animation
 const TimelineDot = ({ index }) => {
     const [isVisible, setIsVisible] = useState(false);
     const dotRef = useRef(null);
@@ -62,6 +64,7 @@ const AnimatedProgramContentCard = ({
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
+                    // Add a slight delay based on index for staggered effect
                     setTimeout(() => {
                         setIsVisible(true);
                     }, index * 150);
@@ -108,7 +111,7 @@ const AnimatedProgramContentCard = ({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {}
+            {/* Animated background glow */}
             <div 
                 className="absolute inset-0 opacity-0 transition-opacity duration-500 rounded-3xl"
                 style={{
@@ -117,7 +120,7 @@ const AnimatedProgramContentCard = ({
                 }}
             />
             
-            {}
+            {/* Floating particles animation */}
             {isHovered && (
                 <>
                     <div 
@@ -155,7 +158,7 @@ const AnimatedProgramContentCard = ({
             }`}>
                 <span className="text-white leading-tight relative">
                     {title}
-                    {}
+                    {/* Animated underline */}
                     <div 
                         className="absolute bottom-0 left-1/2 h-0.5 transition-all duration-500 transform -translate-x-1/2"
                         style={{
@@ -251,77 +254,67 @@ const AnimatedBootcampProgramContent = () => {
             title: "Photo Manipulation",
             sessions: "2 Sessions",
             workshops: "1 Workshop",
-            description: "In-depth exploration of Adobe Photoshop tools to create manipulated photographs. Participants will work different Photoshop tasks under the guidance of their mentors",
+            description: "In-depth exploration of Adobe Photoshop tools to create manipulated photographs. Participants will work different Photoshop tasks under the guidance of their mentors.",
             align: "left",
             borderColor: "#ec1a63",
         },
         {
-            title: "Adobe Photoshop Basics",
-            sessions: "2 Sessions",
+            title: "3D Design",
+            sessions: "1 Session",
             workshops: "1 Workshop",
-            description: "Get hands-on experience with Photoshop's essential tools for photo editing, manipulation, and digital painting.",
+            description: "Basics of Blender interface and key tools for any project. Students will create 3D models with different materials and realistic elements.",
             align: "right",
-            borderColor: "#3b82f6",
+            borderColor: "var(--main-color-2)",
         },
         {
-            title: "Vector Art with Adobe Illustrator",
-            sessions: "2 Sessions",
+            title: "Video Editing",
+            sessions: "1 Session",
             workshops: "1 Workshop",
-            description: "Master the pen tool and create scalable vector graphics, logos, and illustrations in Illustrator.",
+            description: "In-depth exploration of editing and controlling videos with Adobe Premiere Pro. Students will use advanced video effects like key frames and animations.",
             align: "left",
-            borderColor: "#10b981",
+            borderColor: "var(--main-color-3)",
         },
         {
-            title: "Advanced Photoshop Techniques",
+            title: "Animation",
             sessions: "2 Sessions",
             workshops: "1 Workshop",
-            description: "Dive deeper into Photoshop with advanced selection, masking, and compositing techniques.",
+            description: "Students will learn the basics of 2D animation with Adobe Animate and Adobe After Effects.. They will animate simple characters and move different body parts with some aura and light effects.",
             align: "right",
             borderColor: "#ec1a63",
         },
         {
-            title: "Typography and Layout",
-            sessions: "2 Sessions",
-            workshops: "1 Workshop",
-            description: "Explore the art of typography and create compelling layouts for web and print.",
+            title: "Final Project",
+            description: "Each student will choose a visual art category (i.e. Photo Manipulation, 3D Design, Video Editing, Animation) and design a meaningful project.",
             align: "left",
-            borderColor: "#3b82f6",
+            borderColor: "var(--main-color-2)",
         },
         {
-            title: "Intro to UI/UX Design",
-            sessions: "2 Sessions",
-            workshops: "1 Workshop",
-            description: "Understand the principles of User Interface and User Experience design to create user-friendly digital products.",
+            title: "Certificates",
+            description: "After completing the program, students will get certificates based on their commitment and performance",
             align: "right",
-            borderColor: "#10b981",
-        },
-        {
-            title: "Branding and Identity",
-            sessions: "2 Sessions",
-            workshops: "1 Workshop",
-            description: "Learn how to create a strong brand identity, from logo design to a complete brand style guide.",
-            align: "left",
-            borderColor: "#ec1a63",
-        },
-        {
-            title: "Final Project & Portfolio Building",
-            sessions: "2 Sessions",
-            workshops: "1 Workshop",
-            description: "Apply your skills to a comprehensive final project and learn how to build a professional portfolio to showcase your work.",
-            align: "right",
-            borderColor: "#3b82f6",
+            borderColor: "var(--main-color-3)",
         },
     ];
 
     return (
         <div className="bg-black min-h-screen p-4">
             <div className="flex flex-col justify-center items-center text-center mg-3 p-5">
-                <HeadWord HeadWord="Bootcamp Program" color="#ec1a63" />
-                <Underline color="#ec1a63" />
+                <HeadWord HeadWord="Program Content" color="var(--main-color-3)" />
+                <Underline color="var(--main-color-3)" />
+                
+                <motion.p 
+                    initial={{ opacity: 1, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    className="text-center text-lg md:text-xl text-white max-w-4xl mx-auto mt-8 mb-8 px-4"
+                >
+                    The program consists of 6 specialized training sessions + two practical workshops. Students will hand practical tasks after each session to ensure comprehension. At the end, students will work on their final projects.
+                </motion.p>
             </div>
             
             <div className="relative container mx-auto px-6 flex flex-col space-y-8" ref={timelineRef}>
-                {}
+                {/* Animated central line */}
                 <div 
                     className={`absolute z-0 w-2 h-full inset-0 left-1/2 -translate-x-1/2 overflow-hidden transition-all duration-1000 ease-out ${
                         visibleTimeline ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
@@ -332,7 +325,7 @@ const AnimatedBootcampProgramContent = () => {
                         transformOrigin: 'top center',
                     }}
                 >
-                    {}
+                    {/* Animated pulse running down the line */}
                     {visibleTimeline && (
                         <div 
                             className="absolute w-full h-20 bg-gradient-to-b from-transparent via-white to-transparent opacity-50"
@@ -353,7 +346,7 @@ const AnimatedBootcampProgramContent = () => {
                             <AnimatedProgramContentCard {...item} index={index} />
                         </div>
                         
-                        {}
+                        {/* Animated timeline dot */}
                         <TimelineDot index={index} />
                     </div>
                 ))}
@@ -409,4 +402,3 @@ const AnimatedBootcampProgramContent = () => {
 };
 
 export default AnimatedBootcampProgramContent;
-

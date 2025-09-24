@@ -40,7 +40,7 @@ const BootcampHero = () => {
           
           <button 
           onClick={handleApplyClick}
-          className="bg-[var(--main-color)] hover:bg-[var(--main-color-2)] text-white px-10 py-4 rounded-full inline-block mb-8 cursor-pointer transition-colors text-xl font-bold transform hover:scale-105 active:scale-95"
+          className="bg-[var(--main-color)] hover:bg-[var(--main-color)] text-white px-10 py-4 rounded-full inline-block mb-8 cursor-pointer transition-colors text-xl font-bold transform hover:scale-105 active:scale-95"
         >
           APPLY NOW
         </button>

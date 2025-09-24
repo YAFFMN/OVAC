@@ -57,7 +57,7 @@ function NavBar() {
             </Link>
             <Link
               to="/Bootcamp"
-              className="bg-[#ec1a63] text-white text-lg font-medium px-4 py-2 rounded-lg hover:bg-[#d11652] hover:scale-105 transform transition duration-300 ease-in-out shadow-lg"
+              className="bg-[#ec1a63] text-white text-lg font-medium px-3 py-1 rounded-lg hover:bg-[#d11652] hover:scale-105 transform transition duration-300 ease-in-out shadow-lg"
             >
               Bootcamp
             </Link>

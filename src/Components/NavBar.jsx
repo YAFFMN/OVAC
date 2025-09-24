@@ -57,7 +57,7 @@ function NavBar() {
             </Link>
             <Link
               to="/Bootcamp"
-              className="bg-[#ec1a63] text-white text-lg font-medium px-4 py-2 rounded-lg hover:bg-[#d11652] hover:scale-105 transform transition duration-300 ease-in-out shadow-lg"
+              className="border-2 border-[#ec1a63] text-white text-lg font-medium px-3 py-1 rounded-lg hover:bg-[#ec1a63] hover:text-white hover:scale-105 transform transition duration-300 ease-in-out shadow-lg"
             >
               Bootcamp
             </Link>
@@ -143,7 +143,7 @@ function NavBar() {
             </Link>
             <Link
               to="/Bootcamp"
-              className="w-full text-center bg-[white] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#d11652] hover:scale-105 transform transition duration-200 shadow-lg"
+              className="w-full text-center border-2 border-[#ec1a63] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white hover:scale-105 transform transition duration-200 shadow-lg"
               onClick={() => setMenuOpen(false)}
             >
               Bootcamp
@@ -154,7 +154,7 @@ function NavBar() {
       </nav>
       <div
         className="fixed left-1/2 -translate-x-1/2 w-[75%] h-1 bg-[#ec1a63]"
-        style={{ top: "4.5rem", zIndex: 49 }}
+        style={{ top: "5rem", zIndex: 49 }}
       />
       {/* Add slideDown and xPop animation */}
       <style>

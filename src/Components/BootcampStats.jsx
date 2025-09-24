@@ -21,7 +21,7 @@ const stats = [
       "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
   },
   {
-    label: "Certicates Awarded",
+    label: "Certicates",
     value: 30,
     colors: "from-[#53be97] to-[#2caa7c]",
     border: "border-[#53be97]",  

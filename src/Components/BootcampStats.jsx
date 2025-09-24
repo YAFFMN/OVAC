@@ -21,7 +21,7 @@ const stats = [
       "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
   },
   {
-    label: "Certificates",
+    label: "Certicates",
     value: 30,
     colors: "from-[#53be97] to-[#2caa7c]",
     border: "border-[#53be97]",  
@@ -86,7 +86,19 @@ const BootcampStats = () => {
     <div className="flex flex-col justify-center items-center py-20 px-4 relative z-1 overflow-hidden">
       <HeadWord HeadWord={"Last Year's Numbers"} />
       <Underline />
-      <div className="flex flex-col md:flex-row items-center justify-center mt-16">
+      
+      {/* Introductory text */}
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="text-center text-lg md:text-xl text-white max-w-4xl mx-auto mt-8 mb-8 px-4"
+      >
+        As the club was founded in 2024, our previous season was the first season and we organized our first Bootcamp then, and here is what we accomplished:
+      </motion.p>
+      
+      <div className="flex flex-col md:flex-row items-center justify-center mt-8">
         {stats.map((stat, idx) => (
           <StatBox
             key={stat.label}
@@ -104,4 +116,3 @@ const BootcampStats = () => {
 };
 
 export default BootcampStats;
-

@@ -13,7 +13,7 @@ const stats = [
       "linear-gradient(135deg, rgba(236,26,99,0.25) 0%, rgba(255,182,213,0.25) 100%)",
   },
   {
-    label: "WorkshopsProjects",
+    label: "Projects",
     value: 50,
     colors: "from-[#ffd600] to-[#ffb700]",
     border: "border-[#ffd600]",
@@ -21,7 +21,7 @@ const stats = [
       "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
   },
   {
-    label: "Workshops",
+    label: "Certicates Awarded",
     value: 30,
     colors: "from-[#53be97] to-[#2caa7c]",
     border: "border-[#53be97]",  

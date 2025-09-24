@@ -75,7 +75,7 @@ const BootcampEligibility = () => {
         <R_EligabilityCard
         title={
           <>
-            Previous Knowledge <span style={{color: 'yellow'}}>IS NOT</span> Required!
+            Previous Knowledge <span style={{color: 'var(--main-color-2)'}}>IS NOT</span> Required!
           </>
         }
         description="You can have your first experience with us, with no
@@ -89,3 +89,4 @@ const BootcampEligibility = () => {
   )
 }
 export default BootcampEligibility
+

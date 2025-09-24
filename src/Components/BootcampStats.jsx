@@ -13,18 +13,18 @@ const stats = [
       "linear-gradient(135deg, rgba(236,26,99,0.25) 0%, rgba(255,182,213,0.25) 100%)",
   },
   {
-    label: "Workshops",
+    label: "WorkshopsProjects",
     value: 50,
-    colors: "from-[#53be97] to-[#2caa7c]",
-    border: "border-[#53be97]",
+    colors: "from-[#ffd600] to-[#ffb700]",
+    border: "border-[#ffd600]",
     gradient:
       "linear-gradient(135deg, rgba(83,190,151,0.25) 0%, rgba(44,170,124,0.25) 100%)",
   },
   {
-    label: "Projects",
+    label: "Workshops",
     value: 30,
-    colors: "from-[#ffd600] to-[#ffb700]",
-    border: "border-[#ffd600]",
+    colors: "from-[#53be97] to-[#2caa7c]",
+    border: "border-[#53be97]",  
     gradient:
       "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
   },

@@ -34,7 +34,7 @@ const BootcampHero = () => {
             </span>
           </h1>
           
-          <p className="text-yellow-400 text-xl mb-8 font-medium text-center">
+          <p className="text-[var(--main-color-2)] text-xl mb-8 font-medium text-center">
             Acquire creative visual arts skills through our 5-week online program
           </p>
           

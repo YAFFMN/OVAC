@@ -123,8 +123,8 @@ const BootcampCTA = () => {
                             {/* Program Start Date */}
                             <div className="text-center">
                                 <p className="text-white text-sm md:text-base mb-2">Program Starts at</p>
-                                <p className="text-yellow-400 text-lg md:text-xl lg:text-2xl font-bold">
-                                    4 October 2025
+                                <p className="text-[var(--main-color-2)] text-lg md:text-xl lg:text-2xl font-bold">
+                                    13 October 2025
                                 </p>
                             </div>
 
@@ -135,8 +135,7 @@ const BootcampCTA = () => {
                             <div className="flex items-center">
                                 <button
                                     onClick={handleApplyNow}
-                                    className={`relative overflow-hidden bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold py-3 px-8 md:py-4 md:px-12 rounded-full text-lg md:text-xl transition-all duration-300 transform ${
-                                        isHovered ? 'scale-110 shadow-2xl' : 'hover:scale-105'
+                                        className={`relative bg-[#ec1a63] text-white font-bold py-3 px-8 md:py-4 md:px-12 rounded-full text-lg md:text-xl transition-all duration-300 transform ${                                        isHovered ? 'scale-110 shadow-2xl' : 'hover:scale-105'
                                     }`}
                                     style={{
                                         boxShadow: isHovered 
@@ -161,8 +160,8 @@ const BootcampCTA = () => {
                             {/* Registration Deadline */}
                             <div className="text-center">
                                 <p className="text-white text-sm md:text-base mb-2">Registration Deadline</p>
-                                <p className="text-yellow-400 text-lg md:text-xl lg:text-2xl font-bold">
-                                    20 September 2025
+                                <p className="text-[var(--main-color-2)] text-lg md:text-xl lg:text-2xl font-bold">
+                                    5 October 2025
                                 </p>
                             </div>
                         </div>

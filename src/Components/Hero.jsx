@@ -26,7 +26,7 @@ const Hero = () => {
         </a>
         <a
             href="/gallery"
-          className="transform rounded-full border-2 border-[#2caa7c] bg-transparent px-8 py-4 font-bold text-[#2caa7c] transition-all duration-300 ease-in-out hover:scale-105 hover:border-[#2caa7c] hover:bg-[#2caa7c] hover:text-white hover:shadow-lg hover:shadow-[#ec1a63]/40"
+          className="transform rounded-full border-2 border-[#2caa7c] bg-transparent px-8 py-4 font-bold text-[#2caa7c] transition-all duration-300 ease-in-out hover:scale-105 hover:border-[#2caa7c] hover:bg-[#2caa7c] hover:text-white hover:shadow-lg hover:shadow-[#2caa7c]/40"
         >
           See our Art
         </a>

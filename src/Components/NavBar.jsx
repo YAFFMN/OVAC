@@ -143,7 +143,7 @@ function NavBar() {
             </Link>
             <Link
               to="/Bootcamp"
-              className="w-full text-center border-2 border-[#ec1a63] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white hover:scale-105 transform transition duration-200 shadow-lg"
+              className="w-full text-center border-2 border-[#ec1a63] text-[#ec1a63] text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white hover:scale-105 transform transition duration-200 shadow-lg"
               onClick={() => setMenuOpen(false)}
             >
               Bootcamp

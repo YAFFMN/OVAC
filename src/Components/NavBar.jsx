@@ -36,7 +36,7 @@ function NavBar() {
             </div>
           </div>
           {/* Desktop links */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-6 items-center">
             <Link
               to="/"
               className="text-gray-100 text-lg font-medium hover:text-[var(--main-color)] transition duration-300 ease-in-out"
@@ -57,7 +57,7 @@ function NavBar() {
             </Link>
             <Link
               to="/Bootcamp"
-              className="text-gray-100 text-lg font-medium hover:text-[var(--main-color-3)] transition duration-300 ease-in-out"
+              className="bg-[#ec1a63] text-white text-lg font-medium px-4 py-2 rounded-lg hover:bg-[#d11652] hover:scale-105 transform transition duration-300 ease-in-out shadow-lg"
             >
               Bootcamp
             </Link>
@@ -143,10 +143,10 @@ function NavBar() {
             </Link>
             <Link
               to="/Bootcamp"
-              className="w-full text-center text-[#ec1a63] text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white transition duration-200 shadow"
+              className="w-full text-center bg-[#ec1a63] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#d11652] hover:scale-105 transform transition duration-200 shadow-lg"
               onClick={() => setMenuOpen(false)}
             >
-              Gallery
+              Bootcamp
             </Link>
             <div className="mt-12 text-sm text-gray-400">© 2025 OVAC</div>
           </div>

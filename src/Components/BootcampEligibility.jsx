@@ -73,7 +73,11 @@ const BootcampEligibility = () => {
         transition={{ type: 'spring', stiffness: 80, damping: 18, mass: 0.6 }}
       >
         <R_EligabilityCard
-        title="Previous Knowledge IS NOT Required!"
+        title={
+          <>
+            Previous Knowledge <span style={{color: 'yellow'}}>IS NOT</span> Required!
+          </>
+        }
         description="You can have your first experience with us, with no
  need for previous visual art skills"
         Icon={<FaBrain className="text-6xl text-center text-black" />}

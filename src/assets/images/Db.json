@@ -18,6 +18,7 @@
       }
     ],
     "worker": [
+
       {
         "src": "https://i.ibb.co/d4xqRnDX/abdelrahman.png",
         "alt": "Abdelrahman",
@@ -66,6 +67,18 @@
         "name": "omar_sabry",
         "year": 2024
       },
+            {
+        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
+        "alt": "ziad",
+        "name": "Ziad",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/kgMtp7pb/tareq-khalil.jpg",
+        "alt": "tareq_khalil",
+        "name": "tareqkhalil",
+        "year": 2025
+      },
       {
         "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
         "alt": "amro",
@@ -95,19 +108,9 @@
         "alt": "tareq_ismail",
         "name": "Tareq Ismail",
         "year": 2025
-      },
-      {
-        "src": "https://i.ibb.co/kgMtp7pb/tareq-khalil.jpg",
-        "alt": "tareq_khalil",
-        "name": "Tareq Khalil",
-        "year": 2025
-      },
-      {
-        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
-        "alt": "ziad",
-        "name": "Ziad",
-        "year": 2025
       }
+
+
     ],
     "gallery": [
       {

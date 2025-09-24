@@ -261,18 +261,18 @@ const AnimatedBootcampProgramContent = () => {
         {
             title: "3D Design",
             sessions: "1 Session",
-            workshops: "1 Workshop",
+            workshops: "0 Workshop",
             description: "Basics of Blender interface and key tools for any project. Students will create 3D models with different materials and realistic elements.",
             align: "right",
-            borderColor: "var(--main-color-2)",
+            borderColor: "#fdef9d",
         },
         {
             title: "Video Editing",
             sessions: "1 Session",
-            workshops: "1 Workshop",
+            workshops: "0 Workshop",
             description: "In-depth exploration of editing and controlling videos with Adobe Premiere Pro. Students will use advanced video effects like key frames and animations.",
             align: "left",
-            borderColor: "var(--main-color-3)",
+            borderColor: "#2caa7c",
         },
         {
             title: "Animation",
@@ -286,13 +286,13 @@ const AnimatedBootcampProgramContent = () => {
             title: "Final Project",
             description: "Each student will choose a visual art category (i.e. Photo Manipulation, 3D Design, Video Editing, Animation) and design a meaningful project.",
             align: "left",
-            borderColor: "var(--main-color-2)",
+            borderColor: "#fdef9d",
         },
         {
             title: "Certificates",
             description: "After completing the program, students will get certificates based on their commitment and performance",
             align: "right",
-            borderColor: "var(--main-color-3)",
+            borderColor: "#2caa7c",
         },
     ];
 

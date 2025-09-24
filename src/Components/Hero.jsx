@@ -22,7 +22,7 @@ const Hero = () => {
           href="/bootcamp"
           className="transform rounded-full bg-[#ec1a63] px-8 py-4 font-bold text-white shadow-lg shadow-[#ec1a63]/30 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#ec1a63] hover:shadow-xl hover:shadow-[#ec1a63]/50"
         >
-          Register For the bootcamp
+          Register For the Bootcamp
         </a>
         <a
             href="/gallery"

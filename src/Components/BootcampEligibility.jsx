@@ -83,8 +83,7 @@ const BootcampEligibility = () => {
             Previous Knowledge <span style={{color: 'var(--main-color-2)'}}>IS NOT</span> Required!
           </>
         }
-        description="You can have your first experience with us, with no
- need for previous visual art skills"
+        description="You can have your first experience with us."
         gradient="radial-gradient(120% 140% at 85% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
         textAlign="right"
         Icon={<FaBrain className="text-6xl text-center text-black" />}

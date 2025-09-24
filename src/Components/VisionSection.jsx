@@ -43,7 +43,7 @@ const VisionSection = () => {
           title={<span style={{ color: "#fdef9d" }}>Our Mission</span>}
           description={
             <div className="text-left">
-              "The club aims to introduce a new generation of digital artists who possess the innovation and passion needed to excel in their art field, allowing them to make significant contributions to their community."
+              The club aims to introduce a new generation of digital artists who possess the innovation and passion needed to excel in their art field, allowing them to make significant contributions to their community.
             </div>
           }
           borderColor="#fdef9d"
@@ -54,7 +54,7 @@ const VisionSection = () => {
           title={<span style={{ color: "#ec1a63" }}>Our Approach</span>}
           description={
             <div className="text-left">
-              "The club strives to fulfill its mission by offering unpaid membership to any individual interested in digital arts. Through this membership, members are offered tutorial lectures and assignments in graphic design, video production, and 3D design."
+              The club strives to fulfill its mission by offering unpaid membership to any individual interested in digital arts. Through this membership, members are offered tutorial lectures and assignments in graphic design, video production, and 3D design.
             </div>
           }
           borderColor="#ec1a63"

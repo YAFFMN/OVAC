@@ -1,6 +1,15 @@
 import React from "react";
 import MainLogo from "../assets/logo-OVAC-1.png";
+
 const Hero = () => {
+    const navigate = useNavigate()
+
+  const bootcamp = () => {
+    navigate('/bootcamp')
+  }
+  const gallery = () => {
+    navigate('/gallery')
+  }
   return (
     <div className="flex flex-col items-center justify-start h-screen px-4 pt-28 text-center">
       <img
@@ -19,13 +28,13 @@ const Hero = () => {
       {/* buttons  */}
       <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row">
         <a
-          href="/Bootcamp"
+          onClick={bootcamp}
           className="transform rounded-full bg-[#ec1a63] px-8 py-4 font-bold text-white shadow-lg shadow-[#ec1a63]/30 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#ec1a63] hover:shadow-xl hover:shadow-[#ec1a63]/50"
         >
           Register For the Bootcamp
         </a>
         <a
-            href="/Gallery"
+          onClick={gallery}
           className="transform rounded-full border-2 border-[#2caa7c] bg-transparent px-8 py-4 font-bold text-[#2caa7c] transition-all duration-300 ease-in-out hover:scale-105 hover:border-[#2caa7c] hover:bg-[#2caa7c] hover:text-white hover:shadow-lg hover:shadow-[#2caa7c]/40"
         >
           See our Art

@@ -50,8 +50,8 @@ const AnimatedProgramContentCard = ({
     borderColor = "#ec1a63",
     gradient,
     title = "Photoshop Manipulation",
-    sessions = "2 Sessions",
-    workshops = "1 Workshop",
+    sessions = "",
+    workshops = "",
     description = "In-depth exploration of Adobe Photoshop tools to create manipulated photographs. Participants will work different Photoshop tasks under the guidance of their mentors.",
     index = 0,
     align = "left"

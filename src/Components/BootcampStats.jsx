@@ -16,7 +16,7 @@ const stats = [
     label: "Projects",
     value: 50,
     colors: "from-[#ffd600] to-[#ffb700]",
-    border: "border-[#ffd600]",
+    border: "border-[var(--main-color-2)]",
     gradient:
       "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
   },

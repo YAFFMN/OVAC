@@ -18,7 +18,7 @@ const stats = [
     colors: "from-[#ffd600] to-[#ffb700]",
     border: "border-[#ffd600]",
     gradient:
-      "linear-gradient(135deg, rgba(83,190,151,0.25) 0%, rgba(44,170,124,0.25) 100%)",
+      "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
   },
   {
     label: "Workshops",
@@ -26,7 +26,7 @@ const stats = [
     colors: "from-[#53be97] to-[#2caa7c]",
     border: "border-[#53be97]",  
     gradient:
-      "linear-gradient(135deg, rgba(255,214,0,0.25) 0%, rgba(255,183,0,0.25) 100%)",
+      "linear-gradient(135deg, rgba(83,190,151,0.25) 0%, rgba(44,170,124,0.25) 100%)",
   },
 ];
 

@@ -154,7 +154,7 @@ function NavBar() {
       </nav>
       <div
         className="fixed left-1/2 -translate-x-1/2 w-[75%] h-1 bg-[#ec1a63]"
-        style={{ top: "4.5rem", zIndex: 49 }}
+        style={{ top: "5rem", zIndex: 49 }}
       />
       {/* Add slideDown and xPop animation */}
       <style>

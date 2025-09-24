@@ -10,7 +10,7 @@ const BootcampHero = () => {
 
   return (
    <div className="flex items-center justify-center min-h-screen px-4 relative z-1">
-        <div className="flex flex-col items-center justify-center border-4 border-green-500 rounded-3xl p-6 max-w-4xl w-full text-center mt-24"
+        <div className="flex flex-col items-center justify-center border-4 border-[var(--main-color-3)] rounded-3xl p-6 max-w-4xl w-full text-center mt-24"
           style={{
             background: "linear-gradient(90deg, rgba(34,197,94,0.12) 0%, rgba(236,26,99,0.12) 100%)",
             backdropFilter: "blur(16px)",
@@ -40,13 +40,13 @@ const BootcampHero = () => {
           
           <button 
           onClick={handleApplyClick}
-          className="bg-[var(--main-color)] hover:bg-[var(--main-color)] text-white px-10 py-4 rounded-full inline-block mb-8 cursor-pointer transition-colors text-xl font-bold transform hover:scale-105 active:scale-95"
+          className="bg-[var(--main-color)] hover:bg-pink-800 text-white px-10 py-4 rounded-full inline-block mb-8 cursor-pointer transition-colors text-xl font-bold transform hover:scale-105 active:scale-95"
         >
           APPLY NOW
         </button>
           
           <p className="text-white text-lg text-center">
-            Registration Deadline: <span className="text-yellow-400 font-semibold">September 20, 2025</span>
+            Registration Deadline: <span className="text-[var(--main-color-2)] font-semibold">October 5, 2025</span>
           </p>
         </div>
       </div>

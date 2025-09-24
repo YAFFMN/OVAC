@@ -29,6 +29,7 @@ const BootcampEligibility = () => {
       >
         <EligabilityCard
         gradient="radial-gradient(120% 140% at 15% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
+        textAlign="left"
         />
       </MotionDiv>
       
@@ -44,6 +45,8 @@ const BootcampEligibility = () => {
         title="High School Student"
         description="Applicants must be between grade 9 and grade 12"
         borderColor='var(--main-color-2)'
+        gradient="radial-gradient(120% 140% at 85% 50%, rgba(255,214,0,0.35) 0%, rgba(255,214,0,0.15) 40%, rgba(255,214,0,0) 70%)"
+        textAlign="right"
         Icon={<LuSchool className="text-6xl text-center text-black" />}
         />
       </MotionDiv>
@@ -60,6 +63,8 @@ const BootcampEligibility = () => {
         title="Stable Internet Connection"
         description="The program will be held through online meetings"
         borderColor='var(--main-color-3)'
+        gradient="radial-gradient(120% 140% at 15% 50%, rgba(83,190,151,0.35) 0%, rgba(83,190,151,0.15) 40%, rgba(83,190,151,0) 70%)"
+        textAlign="left"
         Icon={<TbWorld className="text-6xl text-center text-black" />}
         />
       </MotionDiv>
@@ -80,6 +85,8 @@ const BootcampEligibility = () => {
         }
         description="You can have your first experience with us, with no
  need for previous visual art skills"
+        gradient="radial-gradient(120% 140% at 85% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
+        textAlign="right"
         Icon={<FaBrain className="text-6xl text-center text-black" />}
         />
       </MotionDiv>
@@ -89,4 +96,3 @@ const BootcampEligibility = () => {
   )
 }
 export default BootcampEligibility
-

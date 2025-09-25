@@ -31,7 +31,7 @@ const roleMapping = {
   "shahd": "Frontend Developer",
   "seif": "UI/UX Designer",
   "nada": "Content Writer",
-  "tareqkhalil": "Animation Mentor\n Co-web Developer",
+  "tareq khalil": "Animation Mentor\n Co-web Developer",
   "mody": "Social Media Director\nVideo Editing Mentor",
   "tareq ismail": "3D Mentor"
 };

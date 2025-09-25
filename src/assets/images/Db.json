@@ -44,12 +44,6 @@
         "year": 2024
       },
       {
-        "src": "https://i.ibb.co/LDVF8t4s/kareem.png",
-        "alt": "kareem",
-        "name": "kareem",
-        "year": 2024
-      },
-      {
         "src": "https://i.ibb.co/ZRxY5rCp/mazen.png",
         "alt": "mazen",
         "name": "mazen",
@@ -68,9 +62,21 @@
         "year": 2024
       },
             {
+        "src": "https://i.ibb.co/LX82cmyC/islam.jpg",
+        "alt": "islam",
+        "name": "islam",
+        "year": 2025
+      },
+            {
         "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
         "alt": "ziad",
         "name": "Ziad",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/r242cBpb/mahmoud.jpg",
+        "alt": "mahmoud",
+        "name": "Mahmoud",
         "year": 2025
       },
       {
@@ -80,21 +86,9 @@
         "year": 2025
       },
       {
-        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
-        "alt": "amro",
-        "name": "amro",
-        "year": 2025
-      },
-      {
-        "src": "https://i.ibb.co/LX82cmyC/islam.jpg",
-        "alt": "youssef",
-        "name": "youssef",
-        "year": 2025
-      },
-      {
-        "src": "https://i.ibb.co/kVq115K9/mody.jpg",
-        "alt": "mody",
-        "name": "Mody",
+        "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
+        "alt": "yaseen",
+        "name": "Yaseen",
         "year": 2025
       },
       {
@@ -103,10 +97,23 @@
         "name": "Kozman",
         "year": 2025
       },
+            {
+        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
+        "alt": "amro",
+        "name": "amro",
+        "year": 2025
+      },
+
       {
         "src": "https://i.ibb.co/23t2gzP3/tareq-ismail.jpg",
         "alt": "tareq_ismail",
         "name": "Tareq Ismail",
+        "year": 2025
+      },
+            {
+        "src": "https://i.ibb.co/kVq115K9/mody.jpg",
+        "alt": "mody",
+        "name": "Mody",
         "year": 2025
       }
 
@@ -182,7 +189,13 @@
         "src": "https://i.ibb.co/3YjtmD8J/18.png",
         "alt": "gallery image 14",
         "name": "Gallery Image 14"
+      },
+      {
+        "src": "../gallery/gojovssukunaTK.mp4",
+        "alt": "gallery image 14",
+        "name": "Gallery Image 14"
       }
+
     ]
   }
 }

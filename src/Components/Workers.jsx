@@ -22,15 +22,18 @@ const roleMapping = {
   "ibrahim": "Developer",
   "mazen": "Content Creator",
   "mahmoud": "Vice-President",
-  "yaseen": "Co-Web Developer",
+  "yaseen": "Head Web Developer",
   "omar": "UX Researcher",
   "omar_sabry": "Data Analyst",
-  "amro": "Project Manager",
+  "amro": "Illustrator Mentor",
+  "kozman": "Photoshop Mentor",
   "islam": "President",
   "shahd": "Frontend Developer",
   "seif": "UI/UX Designer",
   "nada": "Content Writer",
-  "tareqkhalil": "Animation Mentor & Co-web Developer",
+  "tareqkhalil": "Animation Mentor\n & Co-web Developer",
+  "mody": "Social Media Director\nVideo Editing Mentor",
+  "tareq ismail": "3D Mentor"
 };
 
 // Apply specific roles if available, otherwise use default

@@ -24,7 +24,7 @@ const roleMapping = {
   "mahmoud emad": "Vice-President",
   "yaseen ahmed": "Head Web Developer",
   "omar": "Vice-President",
-  "omar_sabry": "President",
+  "omar sabry": "President",
   "amro salah": "Illustrator Mentor",
   "kozman ashraf": "Photoshop Mentor",
   "islam abdelrahman": "President",

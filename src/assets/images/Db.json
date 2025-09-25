@@ -80,14 +80,15 @@
         "year": 2025
       },
       {
-        "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
-        "alt": "yaseen",
-        "name": "Yaseen",
-        "year": 2025
-      },      {
         "src": "https://i.ibb.co/kgMtp7pb/tareq-khalil.jpg",
         "alt": "tareq_khalil",
         "name": "tareqkhalil",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
+        "alt": "yaseen",
+        "name": "Yaseen",
         "year": 2025
       },
       {
@@ -186,11 +187,6 @@
       },
       {
         "src": "https://i.ibb.co/3YjtmD8J/18.png",
-        "alt": "gallery image 14",
-        "name": "Gallery Image 14"
-      },
-      {
-        "src": "../gallery/gojovssukunaTK.mp4",
         "alt": "gallery image 14",
         "name": "Gallery Image 14"
       }

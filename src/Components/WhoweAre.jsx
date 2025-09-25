@@ -6,6 +6,10 @@ import Card from "./ui/Card";
 import DB from "../assets/images/Db.json";
 
 function getImageUrl(path) {
+  // Handle both local and external URLs
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    return path;
+  }
   const imageName = path.replace("./", "");
   return new URL(`../assets/images/${imageName}`, import.meta.url).href;
 }
@@ -15,9 +19,9 @@ const images = DB.images.whoWeAre.map((imageData) => ({
   alt: imageData.alt,
 }));
 
-// Use the first image from the "whoWeAre" section for the single team image
-const SchoolImageSrc = getImageUrl(DB.images.whoWeAre[0].src);
-const SchoolImageAlt = DB.images.whoWeAre[0].alt;
+// Independent school video - using external URL
+const SchoolVideoSrc = "https://hc-cdn.hel1.your-objectstorage.com/s/v3/285761236fbe783788e03e21ec3ec33adce49137_gojovssukuna.mp4";
+const SchoolVideoAlt = "School promotional video";
 
 const WhoweAre = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -77,23 +81,23 @@ const WhoweAre = () => {
         viewport={{ once: false, amount: 0.3 }}
       >
         <motion.div variants={fromLeftVariant}>
-  <Card
-    borderColor="#ec1a63"
-    className="bg-gradient-to-br from-yellow-400/20 to-red-500/20"
-    description={
-      <div className="text-left">
-        <p className="mb-4">
-          We are a group of high school students brought together by our
-          shared passion for art in its visual or digital form. Due to
-          being equipped with the necessary skills besides the inspiring
-          passion, in 2024, we founded this club for the purpose of
-          promoting the artistic community not only in our school but in
-          our whole country, Egypt.
-        </p>
-      </div>
-    }
-  />
-</motion.div>
+          <Card
+            borderColor="#ec1a63"
+            className="bg-gradient-to-br from-yellow-400/20 to-red-500/20"
+            description={
+              <div className="text-left">
+                <p className="mb-4">
+                  We are a group of high school students brought together by our
+                  shared passion for art in its visual or digital form. Due to
+                  being equipped with the necessary skills besides the inspiring
+                  passion, in 2024, we founded this club for the purpose of
+                  promoting the artistic community not only in our school but in
+                  our whole country, Egypt.
+                </p>
+              </div>
+            }
+          />
+        </motion.div>
         <motion.div
           variants={fromRightVariant}
           className="relative flex items-center justify-center w-full min-h-[20rem] sm:min-h-[24rem]"
@@ -128,37 +132,45 @@ const WhoweAre = () => {
           })}
         </motion.div>
       </motion.div>
-      <motion.img
-        src={SchoolImageSrc}
-        alt={SchoolImageAlt}
+      <motion.video
+        src={SchoolVideoSrc}
         className="mt-16 w-full max-w-2xl rounded-4xl border-4 border-[var(--main-color-2)] shadow-xl"
         variants={fromRightVariant}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
-      />
+        controls
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{ aspectRatio: '16/9' }}
+      >
+        <source src={SchoolVideoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </motion.video>
       <motion.div
-  className="mt-16 w-full max-w-6xl"
-  variants={fromLeftVariant}
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: false, amount: 0.3 }}
->
-  <Card
-    borderColor="var(--main-color-3)"
-    className="bg-gradient-to-br from-yellow-400/20 to-green-500/20"
-    description={
-      <p className="text-center">
-        Our community is devoted to providing a welcoming environment for
-        those who hold an interest in various forms of visual expression,
-        including graphic design, video production, 3D design, and
-        animation. The club is committed to nurturing the growth of its
-        members as artists by hosting regular lectures, in addition to
-        monitoring this growth through weekly assignments.
-      </p>
-    }
-  />
-</motion.div>
+        className="mt-16 w-full max-w-6xl"
+        variants={fromLeftVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <Card
+          borderColor="var(--main-color-3)"
+          className="bg-gradient-to-br from-yellow-400/20 to-green-500/20"
+          description={
+            <p className="text-center">
+              Our community is devoted to providing a welcoming environment for
+              those who hold an interest in various forms of visual expression,
+              including graphic design, video production, 3D design, and
+              animation. The club is committed to nurturing the growth of its
+              members as artists by hosting regular lectures, in addition to
+              monitoring this growth through weekly assignments.
+            </p>
+          }
+        />
+      </motion.div>
     </div>
   );
 };

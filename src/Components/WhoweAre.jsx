@@ -134,7 +134,7 @@ const WhoweAre = () => {
       </motion.div>
       <motion.video
         src={SchoolVideoSrc}
-        className="mt-16 w-full max-w-2xl rounded-4xl border-4 border-[var(--main-color-2)] shadow-xl"
+        className="mt-16 w-full max-w-2xl rounded-4xl shadow-xl"
         variants={fromRightVariant}
         initial="hidden"
         whileInView="visible"

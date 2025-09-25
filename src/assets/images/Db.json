@@ -46,77 +46,78 @@
       {
         "src": "https://i.ibb.co/vvL9xwSm/ali.png",
         "alt": "ali",
-        "name": "ali",
+        "name": "ali mostafa",
         "year": 2024
       },
       {
         "src": "https://i.ibb.co/pBwGZ3R5/ebram.png",
         "alt": "ebram",
-        "name": "ebram",
+        "name": "ebram youssef",
         "year": 2024
       },
 
       {
         "src": "https://i.ibb.co/ZRxY5rCp/mazen.png",
         "alt": "mazen",
-        "name": "mazen",
+        "name": "mazen wael",
         "year": 2024
       },
             {
         "src": "https://i.ibb.co/LX82cmyC/islam.jpg",
         "alt": "islam",
-        "name": "islam",
-        "year": 2025
-      },
-            {
-        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
-        "alt": "ziad",
-        "name": "Ziad",
+        "name": "islam abdelrahman",
         "year": 2025
       },
       {
         "src": "https://i.ibb.co/r242cBpb/mahmoud.jpg",
         "alt": "mahmoud",
-        "name": "Mahmoud",
+        "name": "Mahmoud Emad",
+        "year": 2025
+      },
+            {
+        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
+        "alt": "ziad",
+        "name": "ziad salah",
+        "year": 2025
+      },
+            {
+        "src": "https://i.ibb.co/kVq115K9/mody.jpg",
+        "alt": "mody",
+        "name": "Mohamed Salah",
+        "year": 2025
+      },      {
+        "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
+        "alt": "yaseen",
+        "name": "Yaseen ahmed",
         "year": 2025
       },
       {
         "src": "https://i.ibb.co/kgMtp7pb/tareq-khalil.jpg",
         "alt": "tareq_khalil",
-        "name": "tareqkhalil",
+        "name": "Tareq Khalil",
         "year": 2025
       },
-      {
-        "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
-        "alt": "yaseen",
-        "name": "Yaseen",
+            {
+        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
+        "alt": "Amro Salah",
+        "name": "amro salah",
         "year": 2025
       },
       {
         "src": "https://i.ibb.co/hRGypKQr/kozman.jpg",
         "alt": "kozman",
-        "name": "Kozman",
+        "name": "Kozman Ashraf",
         "year": 2025
       },
-            {
-        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
-        "alt": "amro",
-        "name": "amro",
-        "year": 2025
-      },
+
 
       {
         "src": "https://i.ibb.co/23t2gzP3/tareq-ismail.jpg",
         "alt": "tareq_ismail",
         "name": "Tareq Ismail",
         "year": 2025
-      },
-            {
-        "src": "https://i.ibb.co/kVq115K9/mody.jpg",
-        "alt": "mody",
-        "name": "Mody",
-        "year": 2025
       }
+
 
 
     ],

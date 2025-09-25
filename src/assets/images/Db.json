@@ -18,6 +18,24 @@
       }
     ],
     "worker": [
+            {
+        "src": "https://i.ibb.co/kVq2bksH/omar-sabry.png",
+        "alt": "omar",
+        "name": "omar_sabry",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/ZzFx5SyQ/omar-mohamed.png",
+        "alt": "omar",
+        "name": "omar",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/bRQWzPh4/ibrahim.png",
+        "alt": "ibrahim",
+        "name": "ibrahim",
+        "year": 2024
+      },
 
       {
         "src": "https://i.ibb.co/d4xqRnDX/abdelrahman.png",
@@ -37,28 +55,11 @@
         "name": "ebram",
         "year": 2024
       },
-      {
-        "src": "https://i.ibb.co/bRQWzPh4/ibrahim.png",
-        "alt": "ibrahim",
-        "name": "ibrahim",
-        "year": 2024
-      },
+
       {
         "src": "https://i.ibb.co/ZRxY5rCp/mazen.png",
         "alt": "mazen",
         "name": "mazen",
-        "year": 2024
-      },
-      {
-        "src": "https://i.ibb.co/ZzFx5SyQ/omar-mohamed.png",
-        "alt": "omar",
-        "name": "omar",
-        "year": 2024
-      },
-      {
-        "src": "https://i.ibb.co/kVq2bksH/omar-sabry.png",
-        "alt": "omar",
-        "name": "omar_sabry",
         "year": 2024
       },
             {

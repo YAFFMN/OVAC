@@ -31,7 +31,7 @@ const roleMapping = {
   "shahd": "Frontend Developer",
   "seif": "UI/UX Designer",
   "nada": "Content Writer",
-  "tareqkhalil": "Animation Mentor\n & Co-web Developer",
+  "tareqkhalil": "Animation Mentor\n Co-web Developer",
   "mody": "Social Media Director\nVideo Editing Mentor",
   "tareq ismail": "3D Mentor"
 };
@@ -92,7 +92,7 @@ const WorkerCard = ({ name, role, imageUrl, alt, className = "" }) => {
         <h3 className="text-xl font-bold text-white capitalize">
           {name}
         </h3>
-        <p className="text-gray-300 font-medium text-sm tracking-wide">
+        <p className="text-gray-300 font-medium text-sm tracking-wide whitespace-pre-line">
           {role}
         </p>
       </div>
@@ -133,45 +133,24 @@ const Workers = () => {
         ))}
       </div>
 
-      {/* Team Members Grid */}
+      {/* Team Members Grid - 3 per row */}
       <motion.div
-        className="grid w-full max-w-screen-xl grid-cols-1 gap-8 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+        className="grid w-full max-w-screen-lg grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
         key={selectedYear} // Force re-render when year changes
       >
-        {filteredWorkers.map((worker, index) => {
-          // Center remaining cards when there are fewer than 5 in the last row
-          const isLastRowWithFewer = index >= filteredWorkers.length - (filteredWorkers.length % 5);
-          const remainingCards = filteredWorkers.length % 5;
-          const shouldCenter = remainingCards > 0 && remainingCards < 5 && isLastRowWithFewer;
-          
-          let centeringClass = "";
-          if (shouldCenter) {
-            if (remainingCards === 1) {
-              centeringClass = "lg:col-start-3"; // Center single card in middle column
-            } else if (remainingCards === 2) {
-              centeringClass = index === filteredWorkers.length - 2 ? "lg:col-start-2" : ""; // Start from column 2
-            } else if (remainingCards === 3) {
-              centeringClass = index === filteredWorkers.length - 3 ? "lg:col-start-2" : ""; // Start from column 2
-            } else if (remainingCards === 4) {
-              centeringClass = index === filteredWorkers.length - 4 ? "lg:col-start-1" : ""; // Start from column 1
-            }
-          }
-
-          return (
-            <WorkerCard 
-              key={`${worker.name}-${selectedYear}`}
-              name={worker.name}
-              role={worker.role}
-              imageUrl={worker.imageUrl}
-              alt={worker.alt}
-              className={centeringClass} 
-            />
-          );
-        })}
+        {filteredWorkers.map((worker, index) => (
+          <WorkerCard 
+            key={`${worker.name}-${selectedYear}`}
+            name={worker.name}
+            role={worker.role}
+            imageUrl={worker.imageUrl}
+            alt={worker.alt}
+          />
+        ))}
       </motion.div>
 
       {/* Show message if no workers found for selected year */}

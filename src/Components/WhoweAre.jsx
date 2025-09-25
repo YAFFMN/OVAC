@@ -122,7 +122,7 @@ const WhoweAre = () => {
                 animate={variant}
                 whileHover={{ scale: 2, zIndex: 4 }}
                 transition={{ duration: 0.7, type: "spring", bounce: 0.3 }}
-                className="absolute object-cover w-40 h-40 border-4 border-white shadow-lg sm:w-48 sm:h-48 md:w-56 md:h-56"
+                className="absolute object-cover w-40 h-40 border-4 border-[var(--main-color-3)] shadow-lg sm:w-48 sm:h-48 md:w-56 md:h-56"
               />
             );
           })}

@@ -22,7 +22,7 @@ const roleMapping = {
   "ibrahim negm": "Mentor",
   "mazen wael": "Mentor",
   "mahmoud emad": "Vice-President",
-  "yaseen ahmed": "Head Web Developer",
+  "yaseen ahmed": "Co-Web Developer",
   "omar mohamed": "Vice-President",
   "omar sabry": "President",
   "amro salah": "Illustrator Mentor",

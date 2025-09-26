@@ -31,7 +31,7 @@ const roleMapping = {
   "shahd": "Mentor",
   "seif": "Mentor",
   "nada": "Mentor",
-  "tareq khalil": "Animation Mentor\n Co-web Developer",
+  "tareq khalil": "Animation Mentor\n Co-Web Developer",
   "mohamed salah": "Social Media Director\nVideo Editing Mentor",
   "tareq ismail": "3D Mentor"
 };

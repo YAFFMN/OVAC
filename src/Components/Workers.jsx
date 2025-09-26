@@ -27,7 +27,7 @@ const roleMapping = {
   "omar sabry": "President",
   "amro salah": "Illustrator Mentor",
   "kozman ashraf": "Photoshop Mentor",
-  "islam abdelrahman": "President",
+  "islam abdelsalam": "President",
   "shahd": "Mentor",
   "seif": "Mentor",
   "nada": "Mentor",
@@ -76,12 +76,12 @@ const WorkerCard = ({ name, role, imageUrl, alt, className = "" }) => {
   return (
     <motion.div
       variants={cardVariants}
-      className={`flex flex-col items-center p-8 text-center transition-all duration-300 transform bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:scale-105 hover:shadow-pink-500/30 ${className}`}
+      className={`flex flex-col w-80 h-80 items-center align-items-center p-6 text-center transition-all duration-300 transform bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:scale-105 hover:shadow-pink-500/30 ${className}`}
     >
       <img
         src={imageUrl}
         alt={alt || `Photo of ${name}`}
-        className="object-cover w-36 h-36 mb-6 rounded-full border-4 border-[#ec1a63] shadow-lg"
+        className="object-cover w-50 h-50 mb-6 rounded-full border-4 border-[#ec1a63] shadow-lg"
         onError={(e) => {
           // Fallback image if the image fails to load
           e.target.src = `https://placehold.co/400x400/53be97/white?text=${name.charAt(0).toUpperCase()}`;

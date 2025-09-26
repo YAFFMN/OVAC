@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <div className="mb-6">
           <img src={Logo} alt="OVAC Logo" className="mx-auto mb-2 w-24" />
-<h3 className="text-2xl font-bold" style={{ fontFamily: 'moto-verse' }}>
+<h3 className="text-2xl font-bold" style={{ fontFamily: 'Motoverse, sans-serif', fontSize: '2rem' }}>
   <span style={{ color: 'white' }}>O</span>
   <span style={{ color: '#ec1a63' }}>V</span>
   <span style={{ color: '#fdef9d' }}>A</span>

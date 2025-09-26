@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Card from "./ui/Card";
+import Card from "./ui/Card1";
 
 const VisionSection = () => {
   // This code for animation using the library

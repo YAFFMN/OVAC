@@ -20,7 +20,7 @@ const BootcampHero = () => {
       >
         {/* Main Title */}
         <div className="mb-6 sm:mb-8 lg:mb-10 px-2 sm:px-4 lg:px-6">
-          <h1 className="font-bold leading-tight tracking-wide" style={{ fontFamily: 'Motoverse, sans-serif' }}>
+          <h1 className="font-bold leading-tight tracking-wide" style={{ fontFamily: 'Motoverse' }}>
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               <span style={{ color: 'white' }}>O</span><span style={{ color: 'white' }}>ctober</span>
             </span>
@@ -55,5 +55,6 @@ const BootcampHero = () => {
     </div>
   )
 }
+
 
 export default BootcampHero

@@ -37,13 +37,6 @@
         "year": 2024
       },
       {
-        "src": "https://i.ibb.co/bRQWzPh4/ibrahim.png",
-        "alt": "ibrahim",
-        "name": "ibrahim negm",
-        "year": 2024
-      },
-
-      {
         "src": "https://i.ibb.co/d4xqRnDX/abdelrahman.png",
         "alt": "Abdelrahman",
         "name": "abdelrahman ehab",
@@ -54,9 +47,13 @@
         "alt": "ali",
         "name": "ali mostafa",
         "year": 2024
+      },      
+      {
+        "src": "https://i.ibb.co/bRQWzPh4/ibrahim.png",
+        "alt": "ibrahim",
+        "name": "ibrahim negm",
+        "year": 2024
       },
-
-
       {
         "src": "https://i.ibb.co/ZRxY5rCp/mazen.png",
         "alt": "mazen",
@@ -66,7 +63,7 @@
             {
         "src": "https://i.ibb.co/LX82cmyC/islam.jpg",
         "alt": "islam",
-        "name": "islam abdelrahman",
+        "name": "islam abdelsalam",
         "year": 2025
       },
       {

@@ -4,10 +4,21 @@ import Underline from "./ui/Underline";
 import { motion, AnimatePresence } from "framer-motion";
 import DB from "../assets/images/Db.json";
 
+// Your video URL
+const SchoolVideoSrc = "https://hc-cdn.hel1.your-objectstorage.com/s/v3/285761236fbe783788e03e21ec3ec33adce49137_gojovssukuna.mp4";
+
 const GalleryHero = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [galleryItems, setGalleryItems] = useState([]);
   const [loadedItems, setLoadedItems] = useState(new Set());
+  const [videoError, setVideoError] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  // Animation variants
+  const fromRightVariant = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
+  };
 
   // Process gallery data and check for valid items
   useEffect(() => {
@@ -62,6 +73,85 @@ const GalleryHero = () => {
       <p className="mx-auto mt-4 mb-12 max-w-2xl text-gray-400">
         A collection of our finest work. Click on any image or video to view it in full screen.
       </p>
+
+      {/* Featured Video Section - Large and Prominent */}
+      <div className="mb-20 flex justify-center">
+        <div className="w-full max-w-6xl relative">
+          <div className="bg-gray-900 rounded-3xl shadow-2xl border border-gray-700 overflow-hidden">
+            {!videoError ? (
+              <motion.video
+                src={SchoolVideoSrc}
+                className="w-full h-auto"
+                variants={fromRightVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                controls
+                muted
+                loop
+                playsInLine
+                preload="metadata"
+                style={{ 
+                  aspectRatio: '16/9',
+                  minHeight: '400px',
+                  maxHeight: '80vh'
+                }}
+                onError={(e) => {
+                  console.error('Featured video failed to load:', e);
+                  setVideoError(true);
+                }}
+                onCanPlay={() => {
+                  setVideoLoaded(true);
+                }}
+              >
+                <source src={SchoolVideoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+              </motion.video>
+            ) : (
+              <div 
+                className="w-full bg-gray-800 flex items-center justify-center text-white"
+                style={{ 
+                  aspectRatio: '16/9',
+                  minHeight: '400px'
+                }}
+              >
+                <div className="text-center p-8">
+                  <div className="text-6xl mb-4">🎬</div>
+                  <h3 className="text-xl font-semibold mb-2">Featured Video</h3>
+                  <p className="text-gray-400 mb-4">Video could not be loaded</p>
+                  <button 
+                    onClick={() => {
+                      setVideoError(false);
+                      setVideoLoaded(false);
+                    }}
+                    className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm"
+                  >
+                    Try Again
+                  </button>
+                </div>
+              </div>
+            )}
+            
+            {!videoLoaded && !videoError && (
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
+                <div className="text-center text-white">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4"></div>
+                  <p>Loading featured video...</p>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* Section divider */}
+      <div className="mb-12 flex items-center justify-center">
+        <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
+        <span className="px-4 text-gray-400 text-sm whitespace-nowrap">Gallery Collection</span>
+        <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
+      </div>
       
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {galleryItems.map((item) => (

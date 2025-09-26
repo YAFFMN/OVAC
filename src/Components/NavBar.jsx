@@ -117,7 +117,7 @@ function NavBar() {
               boxShadow: "0 8px 32px 0 rgba(236,26,99,0.15)",
             }}
           >
-            <h2 className="text-[#ec1a63] text-4xl font-extrabold mb-8 tracking-wide drop-shadow">
+            <h2 className="text-white text-4xl font-extrabold mb-8 tracking-wide drop-shadow">
               Menu
             </h2>
             <Link
@@ -129,21 +129,21 @@ function NavBar() {
             </Link>
             <Link
               to="/about"
-              className="w-full text-center text-[#ec1a63] text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white transition duration-200 shadow"
+              className="w-full text-center text-[#fdef9d] text-2xl font-bold py-3 rounded-lg hover:bg-[#fdef9d]] hover:text-white transition duration-200 shadow"
               onClick={() => setMenuOpen(false)}
             >
               About us
             </Link>
             <Link
               to="/gallery"
-              className="w-full text-center text-[#ec1a63] text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white transition duration-200 shadow"
+              className="w-full text-center text-[#2caa7c] text-2xl font-bold py-3 rounded-lg hover:bg-[#2caa7c] hover:text-white transition duration-200 shadow"
               onClick={() => setMenuOpen(false)}
             >
               Gallery
             </Link>
             <Link
               to="/Bootcamp"
-              className="w-full text-center border-2 border-[#ec1a63] text-[#ec1a63] text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white hover:scale-105 transform transition duration-200 shadow-lg"
+              className="w-full text-center border-2 border-[#ec1a63] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#ec1a63] hover:text-white hover:scale-105 transform transition duration-200 shadow-lg"
               onClick={() => setMenuOpen(false)}
             >
               Bootcamp

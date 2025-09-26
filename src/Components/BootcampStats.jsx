@@ -116,4 +116,3 @@ const BootcampStats = () => {
 };
 
 export default BootcampStats;
-

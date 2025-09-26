@@ -18,7 +18,7 @@
       }
     ],
     "worker": [
-            {
+      {
         "src": "https://i.ibb.co/kVq2bksH/omar-sabry.png",
         "alt": "omar",
         "name": "omar sabry",
@@ -60,7 +60,7 @@
         "name": "mazen wael",
         "year": 2024
       },
-            {
+      {
         "src": "https://i.ibb.co/LX82cmyC/islam.jpg",
         "alt": "islam",
         "name": "islam abdelsalam",
@@ -72,19 +72,19 @@
         "name": "Mahmoud Emad",
         "year": 2025
       },
-            {
+      {
         "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
         "alt": "ziad",
         "name": "ziad salah",
         "year": 2025
       },
-            {
+      {
         "src": "https://i.ibb.co/kVq115K9/mody.jpg",
         "alt": "mody",
         "name": "Mohamed Salah",
         "year": 2025
       },      
-            {
+      {
         "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
         "alt": "Amro Salah",
         "name": "amro salah",
@@ -96,30 +96,24 @@
         "name": "Kozman Ashraf",
         "year": 2025
       },
-
-
       {
         "src": "https://i.ibb.co/23t2gzP3/tareq-ismail.jpg",
         "alt": "tareq_ismail",
         "name": "Tareq Ismail",
         "year": 2025
       },
-
       {
         "src": "https://i.ibb.co/kgMtp7pb/tareq-khalil.jpg",
         "alt": "tareq_khalil",
         "name": "Tareq Khalil",
         "year": 2025
       },
-            {
+      {
         "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
         "alt": "yaseen",
         "name": "Yassin ahmed",
         "year": 2025
       }
-
-
-
     ],
     "gallery": [
       {
@@ -219,10 +213,53 @@
       },
       {
         "src": "https://i.ibb.co/vxmmZCZp/12.png",
-        "alt": "gallery image 19",
-        "name": "Gallery Image 19"
+        "alt": "gallery image 20",
+        "name": "Gallery Image 20"
       }
-
     ]
-  }
+  },
+  "apps": [
+    {
+      "id": 1,
+      "name": "Adobe Illustrator",
+      "description": "Vector Graphics Design.",
+      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 2,
+      "name": "Adobe Photoshop", 
+      "description": "Photo Manipulation and Design.",
+      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 3,
+      "name": "Adobe Animate",
+      "description": "Create Flash Animations & Effects.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ec959176909e609de6af253edd264c176dfcdc1d_animate.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 4,
+      "name": "Adobe After Effects",
+      "description": "Create Visual Effects & Motion Graphics.",
+      "iconImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 5,
+      "name": "Adobe Premiere Pro",
+      "description": "Video Editing and Production.",
+      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 6,
+      "name": "Blender",
+      "description": "3D Modeling and Animation.",
+      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+      "category": "visual-arts"
+    }
+  ]
 }

@@ -132,23 +132,7 @@ const WhoweAre = () => {
           })}
         </motion.div>
       </motion.div>
-      <motion.video
-        src={SchoolVideoSrc}
-        className="mt-16 w-full max-w-2xl rounded-4xl shadow-xl"
-        variants={fromRightVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        controls
-        autoPlay
-        muted
-        loop
-        playsInline
-        style={{ aspectRatio: '16/9' }}
-      >
-        <source src={SchoolVideoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </motion.video>
+      
       <motion.div
         className="mt-16 w-full max-w-6xl"
         variants={fromLeftVariant}

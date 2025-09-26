@@ -56,7 +56,11 @@ const VisualartsSection = () => {
       >
         Explore the World of Visual Arts
       </motion.h2>
-      
+            {/* Decorative line */}
+      <motion.div
+        style={{ scaleX: lineScaleX, transformOrigin: "left" }}
+        className="w-24 h-1 bg-[#ec1a63] rounded mb-8"
+      ></motion.div>
       {/* Subtitle */}
       <motion.p
         style={{ opacity: titleOpacity, y: titleY }}
@@ -67,11 +71,7 @@ const VisualartsSection = () => {
         <br />In our club, we focus on digital arts.
       </motion.p>
       
-      {/* Decorative line */}
-      <motion.div
-        style={{ scaleX: lineScaleX, transformOrigin: "left" }}
-        className="w-24 h-1 bg-[#ec1a63] rounded mb-8"
-      ></motion.div>
+
 
       {/* Cards Grid - 3 cards per row */}
       <div className="grid w-full max-w-7xl grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-3 lg:gap-12">

@@ -223,14 +223,14 @@
       "id": 1,
       "name": "Adobe Illustrator",
       "description": "Vector Graphics Design.",
-      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/1191a2a4583806db8e6f246f5bffd3d5c15edac8_illustrator.svg",
       "category": "visual-arts"
     },
     {
       "id": 2,
       "name": "Adobe Photoshop", 
       "description": "Photo Manipulation and Design.",
-      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/281278b2da504aadba6a1c01255b3c5164ab94a7_photoshop.svg",
       "category": "visual-arts"
     },
     {
@@ -244,21 +244,21 @@
       "id": 4,
       "name": "Adobe After Effects",
       "description": "Create Visual Effects & Motion Graphics.",
-      "iconImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/2e9886a9ddbbbc35f0acc0970a4046d8203a3baf_after_effects.svg",
       "category": "visual-arts"
     },
     {
       "id": 5,
       "name": "Adobe Premiere Pro",
       "description": "Video Editing and Production.",
-      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/16453f22c5c0b9841c15bea5ba386b9bf951be2a_premiere.svg",
       "category": "visual-arts"
     },
     {
       "id": 6,
       "name": "Blender",
       "description": "3D Modeling and Animation.",
-      "iconImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/fc8b6cad3ab8a19aebf190e77f136b238213d44b_blender.svg",
       "category": "visual-arts"
     }
   ]

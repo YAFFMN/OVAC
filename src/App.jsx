@@ -10,6 +10,7 @@ import AdminPanel from './Pages/AdminPanel.jsx';
 import NavBar from './Components/NavBar.jsx'
 import DB from './assets/images/Db.json'
 import './assets/fonts/fonts.css';
+import './fonts/Motoverse.woff2';
 
 function App() {
   

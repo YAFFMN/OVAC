@@ -8,6 +8,8 @@ const Card = ({
   icon,
   borderColor = "#2caa7c", // Default border color
   className = "",
+  titleClassName = "",
+  descriptionClassName = "",
 }) => {
   return (
     <motion.div
@@ -16,13 +18,22 @@ const Card = ({
         borderColor: borderColor,
         boxShadow: `0 0 20px ${borderColor}33`, // Subtle glow effect
       }}
-      className={`relative flex w-full flex-col gap-4 overflow-hidden rounded-2xl border-4 bg-gray-900/50 p-6 text-white backdrop-blur-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_${borderColor}55] ${className}`}
+      className={`relative flex w-full flex-col gap-2 overflow-hidden rounded-2xl border-4 p-4 text-white backdrop-blur-lg transition-all duration-300 hover:scale-[1.02] ${className}`}
     >
-      <div className="flex items-center gap-3 text-3xl font-bold capitalize">
+      {/* Icon above title */}
+      <div className="flex justify-center items-center text-4xl mb-1">
         {icon}
+      </div>
+      
+      {/* Title below icon */}
+      <div className={`text-xl font-bold capitalize text-center ${titleClassName}`}>
         {title}
       </div>
-      <div className="text-lg font-medium text-gray-300">{description}</div>
+      
+      {/* Description */}
+      <div className={`text-lg font-medium text-center ${descriptionClassName || 'text-gray-300'}`}>
+        {description}
+      </div>
     </motion.div>
   );
 };

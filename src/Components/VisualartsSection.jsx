@@ -54,15 +54,17 @@ const VisualartsSection = () => {
         style={{ opacity: titleOpacity, y: titleY }}
         className="text-4xl font-extrabold text-[#ec1a63] mb-4"
       >
-        Visual Arts
+        Explore the World of Visual Arts
       </motion.h2>
       
       {/* Subtitle */}
       <motion.p
         style={{ opacity: titleOpacity, y: titleY }}
-        className="text-lg mb-5 text-[#ec1a63]"
+        className="text-lg mb-5 text-white"
       >
-        Explore the world of visual arts and unleash your creativity.
+        A visual art is art work that has visual characteristics. It includes but not limited to: Graphic design, Photo
+        <br />Manipulation, Video Editing, Animation, Drawing, and Painting.
+        <br />In our club, we focus on digital arts.
       </motion.p>
       
       {/* Decorative line */}

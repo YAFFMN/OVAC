@@ -22,7 +22,7 @@ const roleMapping = {
   "ibrahim negm": "Mentor",
   "mazen wael": "Mentor",
   "mahmoud emad": "Vice-President",
-  "yaseen ahmed": "Co-Web Developer",
+  "yassin ahmed": "Co-Web Developer",
   "omar mohamed": "Vice-President",
   "omar sabry": "President",
   "amro salah": "Illustrator Mentor",
@@ -76,7 +76,7 @@ const WorkerCard = ({ name, role, imageUrl, alt, className = "" }) => {
   return (
     <motion.div
       variants={cardVariants}
-      className={`flex flex-col w-80 h-80 items-center align-items-center p-6 text-center transition-all duration-300 transform bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:scale-105 hover:shadow-pink-500/30 ${className}`}
+      className={`flex flex-col w-80 h-80 items-center align-items-center p-3 text-center transition-all duration-300 transform bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:scale-105 hover:shadow-pink-500/30 ${className}`}
     >
       <img
         src={imageUrl}

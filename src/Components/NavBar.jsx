@@ -31,7 +31,7 @@ function NavBar() {
               className="h-10 w-10 md:h-12 md:w-12"
             />
             <div className="text-lg font-bold text-gray-100 md:text-xl lg:text-2xl">
-              <span className="hidden sm:inline" style={{ fontFamily: 'Motoverse', fontSize: '1.6rem' }}>October Visual Arts Club</span>
+              <span className="hidden sm:inline fonted" >October Visual Arts Club</span>
               <span className="inline sm:hidden">OVAC</span>
             </div>
           </div>

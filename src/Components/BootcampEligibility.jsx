@@ -70,14 +70,17 @@ const BootcampEligibility = () => {
             transition={animationTransition}
           >
             <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-              <EligabilityCard
-                title="Student or Graduate"
-                description="Currently enrolled in educational institution or recent graduate looking to enhance skills"
-                borderColor='var(--main-color-2)'
-                gradient="radial-gradient(120% 140% at 15% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
-                textAlign="left"
-                Icon={<GiGraduateCap className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-black" />}
-              />
+              <div className="w-full h-full">
+                <EligabilityCard
+                  title="Student or Graduate"
+                  description="Currently enrolled in educational institution or recent graduate looking to enhance skills"
+                  borderColor='var(--main-color-2)'
+                  gradient="radial-gradient(120% 140% at 15% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
+                  textAlign="left"
+                  Icon={<GiGraduateCap className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-black" />}
+                  className="w-full h-full text-xs sm:text-sm md:text-base lg:text-lg"
+                />
+              </div>
             </div>
           </MotionDiv>
           
@@ -94,14 +97,17 @@ const BootcampEligibility = () => {
             transition={animationTransition}
           >
             <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-              <R_EligabilityCard
-                title="High School Student"
-                description="Applicants must be between grade 9 and grade 12"
-                borderColor='var(--main-color-2)'
-                gradient="radial-gradient(120% 140% at 85% 50%, rgba(255,214,0,0.35) 0%, rgba(255,214,0,0.15) 40%, rgba(255,214,0,0) 70%)"
-                textAlign="right"
-                Icon={<LuSchool className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-black" />}
-              />
+              <div className="w-full h-full">
+                <R_EligabilityCard
+                  title="High School Student"
+                  description="Applicants must be between grade 9 and grade 12"
+                  borderColor='var(--main-color-2)'
+                  gradient="radial-gradient(120% 140% at 85% 50%, rgba(255,214,0,0.35) 0%, rgba(255,214,0,0.15) 40%, rgba(255,214,0,0) 70%)"
+                  textAlign="right"
+                  Icon={<LuSchool className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-black" />}
+                  className="w-full h-full text-xs sm:text-sm md:text-base lg:text-lg"
+                />
+              </div>
             </div>
           </MotionDiv>
           
@@ -118,14 +124,17 @@ const BootcampEligibility = () => {
             transition={animationTransition}
           >
             <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-              <EligabilityCard
-                title="Stable Internet Connection"
-                description="The program will be held through online meetings with interactive sessions"
-                borderColor='var(--main-color-3)'
-                gradient="radial-gradient(120% 140% at 15% 50%, rgba(83,190,151,0.35) 0%, rgba(83,190,151,0.15) 40%, rgba(83,190,151,0) 70%)"
-                textAlign="left"
-                Icon={<TbWorld className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-black" />}
-              />
+              <div className="w-full h-full">
+                <EligabilityCard
+                  title="Stable Internet Connection"
+                  description="The program will be held through online meetings with interactive sessions"
+                  borderColor='var(--main-color-3)'
+                  gradient="radial-gradient(120% 140% at 15% 50%, rgba(83,190,151,0.35) 0%, rgba(83,190,151,0.15) 40%, rgba(83,190,151,0) 70%)"
+                  textAlign="left"
+                  Icon={<TbWorld className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-black" />}
+                  className="w-full h-full text-xs sm:text-sm md:text-base lg:text-lg"
+                />
+              </div>
             </div>
           </MotionDiv>
           
@@ -142,18 +151,21 @@ const BootcampEligibility = () => {
             transition={animationTransition}
           >
             <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-              <R_EligabilityCard
-                title={
-                  <span className="block">
-                    Previous Knowledge <span className="inline-block" style={{color: 'var(--main-color-2)'}}>IS NOT</span> Required!
-                  </span>
-                }
-                description="You can have your first experience with us. We'll guide you from the basics."
-                borderColor='var(--main-color-2)'
-                gradient="radial-gradient(120% 140% at 85% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
-                textAlign="right"
-                Icon={<FaBrain className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-black" />}
-              />
+              <div className="w-full h-full">
+                <R_EligabilityCard
+                  title={
+                    <span className="block text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-tight">
+                      Previous Knowledge <span className="inline-block" style={{color: 'var(--main-color-2)'}}>IS NOT</span> Required!
+                    </span>
+                  }
+                  description="You can have your first experience with us. We'll guide you from the basics."
+                  borderColor='var(--main-color-2)'
+                  gradient="radial-gradient(120% 140% at 85% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
+                  textAlign="right"
+                  Icon={<FaBrain className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-black" />}
+                  className="w-full h-full text-xs sm:text-sm md:text-base lg:text-lg"
+                />
+              </div>
             </div>
           </MotionDiv>
         </div>

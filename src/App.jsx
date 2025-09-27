@@ -9,7 +9,7 @@ import BootcampRegistration from './Pages/BootcampRegistration.jsx';
 import AdminPanel from './Pages/AdminPanel.jsx';
 import NavBar from './Components/NavBar.jsx'
 import DB from './assets/images/Db.json'
-import './assets/fonts/fonts.css';
+import '../public/fonts/fonts.css';
 
 
 function App() {

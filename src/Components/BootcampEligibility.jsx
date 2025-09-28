@@ -4,7 +4,7 @@ import Underline from './ui/Underline'
 import EligabilityCard from './ui/L_EligabilityCard'
 import R_EligabilityCard from './ui/R_EligabilityCard'
 import { motion } from 'framer-motion'
-import { LuSchool } from 'react-icons/lu'
+import { LuSchool, LuLanguages } from 'react-icons/lu'
 import { TbWorld } from "react-icons/tb";
 import { FaBrain } from "react-icons/fa6";
 import { GiGraduateCap } from "react-icons/gi";
@@ -62,7 +62,7 @@ const BootcampEligibility = () => {
                 borderColor='#ec1a63'
                 gradient="radial-gradient(120% 140% at 15% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
                 textAlign="left"
-                Icon={<FontAwesomeIcon icon={byPrefixAndName.far['language']} className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
+                Icon={<LuLanguages className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
                 titleClassName="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight"
                 descriptionClassName="text-xs sm:text-sm md:text-base lg:text-lg leading-snug"
               />
@@ -85,7 +85,7 @@ const BootcampEligibility = () => {
                 borderColor='var(--main-color-2)'
                 gradient="radial-gradient(120% 140% at 85% 50%, rgba(255,214,0,0.35) 0%, rgba(255,214,0,0.15) 40%, rgba(255,214,0,0) 70%)"
                 textAlign="right"
-                Icon={<GiGraduateCap className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
+                Icon={<LuSchool className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
                 titleClassName="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight"
                 descriptionClassName="text-xs sm:text-sm md:text-base lg:text-lg leading-snug"
               />
@@ -124,11 +124,11 @@ const BootcampEligibility = () => {
             viewport={{ once: false, amount: 0.2 }}
             transition={animationTransition}
           >
-            <div className="w-full max-w-sm sm:text-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <R_EligabilityCard
                 title={
-                  <span>
-                    Previous Knowledge <span className="text-[var(--main-color-2)] text-font-bolder">IS NOT</span> Required!
+                  <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight">
+                    Previous Knowledge <span className="text-yellow-400 font-bold">IS NOT</span> Required!
                   </span>
                 }
                 description="You can have your first experience with us. We'll guide you from the basics."
@@ -136,7 +136,6 @@ const BootcampEligibility = () => {
                 gradient="radial-gradient(120% 140% at 85% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
                 textAlign="right"
                 Icon={<FaBrain className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
-                titleClassName="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight"
                 descriptionClassName="text-xs sm:text-sm md:text-base lg:text-lg leading-snug"
               />
             </div>

@@ -8,8 +8,6 @@ import { LuSchool } from 'react-icons/lu'
 import { TbWorld } from "react-icons/tb";
 import { FaBrain } from "react-icons/fa6";
 import { GiGraduateCap } from "react-icons/gi";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { byPrefixAndName } from '@fortawesome/free-regular-svg-icons';
 
 const BootcampEligibility = () => {
   const MotionDiv = motion.div
@@ -129,7 +127,7 @@ const BootcampEligibility = () => {
             <div className="w-full max-w-sm sm:text-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <R_EligabilityCard
                 title={
-                  <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight">
+                  <span>
                     Previous Knowledge <span className="text-[var(--main-color-2)] text-font-bolder">IS NOT</span> Required!
                   </span>
                 }

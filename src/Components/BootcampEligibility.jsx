@@ -35,9 +35,9 @@
         {/* Header Section - Fully responsive */}
         <div className='flex flex-col items-center justify-center my-6 sm:my-8 md:my-12 lg:my-16 xl:my-20 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12'>
           <div className="flex flex-col items-center text-center w-full max-w-4xl">
-            <HeadWord HeadWord="Program Eligibility" color='#ec1a63' />  
+            <HeadWord HeadWord="Program Eligibility" color='#fdef9d' />  
             <div className="flex justify-center w-full">
-              <Underline color='#ec1a63' />
+              <Underline color='#fdef9d' />
             </div>
           </div>
         </div>

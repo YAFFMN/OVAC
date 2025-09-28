@@ -127,7 +127,7 @@
               <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
                 <R_EligabilityCard
                   title={
-                    <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight">
+                    <span>
                       Previous Knowledge <span className="text-[var(--main-color-2)] font-bold">IS NOT</span> Required!
                     </span>
                   }

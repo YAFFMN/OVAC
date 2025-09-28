@@ -161,7 +161,7 @@ const BootcampCTA = () => {
                             <div className="text-center">
                                 <p className="text-white text-sm md:text-base mb-2">Registration Deadline</p>
                                 <p className="text-[var(--main-color-2)] text-lg md:text-xl lg:text-2xl font-bold">
-                                    5 October 2025
+                                    10 October 2025
                                 </p>
                             </div>
                         </div>

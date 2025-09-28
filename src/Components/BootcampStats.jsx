@@ -84,8 +84,11 @@ const StatBox = ({ label, value, colors, delay, border, gradient }) => {
 const BootcampStats = () => {
   return (
     <div className="flex flex-col justify-center items-center py-20 px-4 relative z-1 overflow-hidden">
-      <HeadWord HeadWord={"Last Year's Numbers"} />
-      <Underline />
+      {/* Header section with explicit centering */}
+      <div className="w-full flex flex-col items-center justify-center text-center">
+        <HeadWord HeadWord={"Last Year's Numbers"} />
+        <Underline />
+      </div>
       
       {/* Introductory text */}
       <motion.p 

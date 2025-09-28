@@ -8,6 +8,8 @@ import { LuSchool } from 'react-icons/lu'
 import { TbWorld } from "react-icons/tb";
 import { FaBrain } from "react-icons/fa6";
 import { GiGraduateCap } from "react-icons/gi";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { byPrefixAndName } from '@fortawesome/free-regular-svg-icons';
 
 const BootcampEligibility = () => {
   const MotionDiv = motion.div
@@ -58,11 +60,11 @@ const BootcampEligibility = () => {
             <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <EligabilityCard
                 title="Arabic Language Proficiency"
-                description="All the content will be explained in Egyptian Arabic"
+                description="All the content will be explained in Egyptian Arabic."
                 borderColor='#ec1a63'
                 gradient="radial-gradient(120% 140% at 15% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
                 textAlign="left"
-                Icon={<GiGraduateCap className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
+                Icon={<FontAwesomeIcon icon={byPrefixAndName.far['language']} className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
                 titleClassName="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight"
                 descriptionClassName="text-xs sm:text-sm md:text-base lg:text-lg leading-snug"
               />
@@ -81,11 +83,11 @@ const BootcampEligibility = () => {
             <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <R_EligabilityCard
                 title="High School Student"
-                description="Applicants must be between grade 9 and grade 12"
+                description="Applicants must be between grade 9 and grade 12."
                 borderColor='var(--main-color-2)'
                 gradient="radial-gradient(120% 140% at 85% 50%, rgba(255,214,0,0.35) 0%, rgba(255,214,0,0.15) 40%, rgba(255,214,0,0) 70%)"
                 textAlign="right"
-                Icon={<LuSchool className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
+                Icon={<GiGraduateCap className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-black" />}
                 titleClassName="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight"
                 descriptionClassName="text-xs sm:text-sm md:text-base lg:text-lg leading-snug"
               />

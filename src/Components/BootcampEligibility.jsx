@@ -131,7 +131,7 @@
                       Previous Knowledge <span className="text-[var(--main-color-2)] font-bold">IS NOT</span> Required!
                     </span>
                   }
-                  description="You can have your first experience with us. We'll guide you from the basics."
+                  description="You can have your first experience with us."
                   borderColor='#ec1a63'
                   gradient="radial-gradient(120% 140% at 85% 50%, rgba(236,26,99,0.35) 0%, rgba(236,26,99,0.15) 40%, rgba(236,26,99,0) 70%)"
                   textAlign="right"
@@ -147,3 +147,4 @@
   }
 
   export default BootcampEligibility
+

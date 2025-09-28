@@ -20,7 +20,7 @@ const BootcampHero = () => {
       >
         {/* Main Title */}
         <div className="mb-6 sm:mb-8 lg:mb-10 px-2 sm:px-4 lg:px-6">
-          <h1 className="font-bold leading-tight tracking-wide" style={{ fontFamily: 'Motoverse' }}>
+          <h1 className="font-bold leading-tight tracking-wide" style={{ fontFamily: 'Motoverse, sans-serif' }}>
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               <span style={{ color: 'white' }}>O</span><span style={{ color: 'white' }}>ctober</span>
             </span>
@@ -49,12 +49,11 @@ const BootcampHero = () => {
         
         {/* Registration Deadline */}
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-center leading-relaxed">
-          Registration Deadline: <span className="text-[var(--main-color-2)] font-semibold">October 5, 2025</span>
+          Registration Deadline: <span className="text-[var(--main-color-2)] font-semibold">October 10, 2025</span>
         </p>
       </div>
     </div>
   )
 }
-
 
 export default BootcampHero

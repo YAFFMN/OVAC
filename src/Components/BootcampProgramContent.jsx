@@ -34,12 +34,12 @@ const TimelineDot = ({ index }) => {
     return (
         <div
             ref={dotRef}
-            className={`absolute w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 rounded-full bg-yellow-400 z-10 left-1/2 -translate-x-1/2 transition-all duration-500 hover:scale-125 hidden sm:block ${
+            className={`absolute w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 rounded-full bg-[#eeeb76] z-10 left-1/2 -translate-x-1/2 transition-all duration-500 hover:scale-125 hidden sm:block ${
                 isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
             }`}
             style={{
                 boxShadow: isVisible 
-                    ? "0 0 8px 2px #10b981, 0 0 16px 3px rgba(16, 185, 129, 0.3)" 
+                    ? "0 0 8px 2px #ec1a63, 0 0 16px 3px rgba(236, 26, 99, 0.3)" 
                     : "none",
             }}
         />
@@ -173,7 +173,7 @@ const AnimatedProgramContentCard = ({
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 md:space-x-4 mb-3 sm:mb-4 w-full">
                 {sessions && (
                     <div 
-                        className={`text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium text-center bg-yellow-400 p-1.5 sm:p-2 rounded-full transition-all duration-300 flex-1 ${
+                        className={`text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium text-center bg-[#eeeb76] p-1.5 sm:p-2 rounded-full transition-all duration-300 flex-1 ${
                             isHovered ? 'transform rotate-1 sm:rotate-3 scale-105 sm:scale-110' : ''
                         }`}
                         style={{
@@ -185,7 +185,7 @@ const AnimatedProgramContentCard = ({
                 )}
                 {workshops && (
                     <div 
-                        className={`text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium text-center bg-green-400 p-1.5 sm:p-2 rounded-full transition-all duration-300 flex-1 ${
+                        className={`text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium text-center bg-[#53be97] p-1.5 sm:p-2 rounded-full transition-all duration-300 flex-1 ${
                             isHovered ? 'transform -rotate-1 sm:-rotate-3 scale-105 sm:scale-110' : ''
                         }`}
                         style={{
